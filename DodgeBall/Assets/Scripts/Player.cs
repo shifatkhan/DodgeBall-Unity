@@ -75,10 +75,6 @@ public class Player : MonoBehaviour
 				ReceiveDamage ();
 			}
 		}*/
-
-		if (other.tag == "Coin") {
-			coins++;
-		}
 	}
 
 	public void ReceiveDamage()
@@ -101,7 +97,7 @@ public class Player : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Moves the player. Raycast only checks for level collision such as walls and floors, not traps.
+	/// Moves the player. Raycast only checks for level collision such as walls and floors
 	/// </summary>
 	/// <param name="moveAmount">Move amount.</param>
 	public void Move (Vector2 moveAmount)
@@ -135,7 +131,7 @@ public class Player : MonoBehaviour
 		} else if (!rc.collision.below) { //when airborne
 			isAirborne = true;
 		}
-		animator.SetBool ("airborne", isAirborne); //Set sprite to airborne animation
+//		animator.SetBool ("airborne", isAirborne); //Set sprite to airborne animation
 		//Falling animation HERE
 
 		//If hit ceiling, set velocity.y to 0 to prevent accumulating
@@ -196,7 +192,7 @@ public class Player : MonoBehaviour
 	private void GetPlayerInput ()
 	{
 		this.directionalInput = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-		animator.SetFloat ("velocityX", Mathf.Abs (directionalInput.x));
+//		animator.SetFloat ("velocityX", Mathf.Abs (directionalInput.x));
 
 		//Jump
 		if (Input.GetKeyDown ("j")) {
