@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 	public bool invincible;
 	public bool hurt;
 	public float invulnerableTime = 2f;
+	public bool ballCaught = false;
 
 	/* MOVEMENT */
 	public float gravity; //Amount of velocity y to fall
@@ -22,7 +23,6 @@ public class Player : MonoBehaviour
 	//1 means facing right, -1 means left
 	public bool isAirborne;
 	public bool isDoubleJumping;
-
 	public Vector2 velocity;
 	public Vector2 directionalInput;
 
@@ -202,8 +202,27 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyUp ("j")) {
 			OnJumpUp ();
 		}
+
+		//throw/catch
+		if (Input.GetKeyDown ("k")) {
+			if (ballCaught) {
+				OnThrowDown ();
+			} else {
+				OnCatchDown ();
+			}
+		}
+
 	}
 
+	private void OnThrowDown (){
+		//you don't have the ball anymore
+		ballCaught = false;
+	}
+
+	private void OnCatchDown(){
+		//make some kind of timing mechanic so that catching is a bit challenging
+		ballCaught = true;
+	}
 	private void OnJumpUp()
 	{
 		if (velocity.y > 8f) {
@@ -217,6 +236,7 @@ public class Player : MonoBehaviour
 			isAirborne = true;
 			velocity.y = jumpHeight;
 		}
+
 
 		//Double jump
 		if (!isDoubleJumping && !rc.collision.below) {
