@@ -117,6 +117,7 @@ public class RaycastController : MonoBehaviour
 			Debug.DrawRay (rayOrigin, rayDirection, Color.red);
 
 			if (hit) {
+				print ("hit");
 				//If already colliding with obstacle, leave as is.
 				if (hit.distance == 0) {
 					continue;
