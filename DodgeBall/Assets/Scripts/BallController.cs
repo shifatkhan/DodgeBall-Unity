@@ -8,11 +8,13 @@ public class BallController : MonoBehaviour
     private Rigidbody2D rigidBody;
 
     public float throwForce = 3500f;
+
+    // Number that tells us if player 1 or player 2 threw the ball.
+    public int throwerId = 2;
     
 	void Start ()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-
     }
 
 	void FixedUpdate ()
@@ -39,6 +41,7 @@ public class BallController : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // REMOVE IF NOT NEEDED
         if (collision.gameObject.tag == "MiddleWall")
         {
             Debug.Log("Ball collided with MiddleWall");
