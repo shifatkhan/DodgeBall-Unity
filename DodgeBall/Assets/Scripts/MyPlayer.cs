@@ -6,6 +6,21 @@ using UnityEngine;
 [RequireComponent(typeof(MyPlayerInput))]
 public class MyPlayer : MonoBehaviour
 {
+    // Identity for player 1 or player 2.
+    private int playerID = 1;
+
+    // Delta time in which the player must catch the ball.
+    public readonly float CATCH_TIME = 0.5f;
+    // Ball Touch is when the ball initially touches the player.
+    // Ball caught depicts wether the player is holding the ball or not.
+    public bool ballTouch = false;
+    public bool ballCaught = false;
+    public float ballHitPushBack = 4f;
+    public GameObject ball = null;
+    private Vector2 ballBounceDirection;
+    
+    public bool invincible = false;
+    public float invulnerableTime = 2f;
 
     public float maxJumpHeight = 2.5f;
     public float minJumpHeight = 1f;
@@ -51,10 +66,12 @@ public class MyPlayer : MonoBehaviour
         wallJumpDistance = new Vector2(7, 15);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
-        CalculateVelocity();
+        if (!ballTouch)
+        {
+            CalculateVelocity();
+        }
 
         rc.Move(velocity * Time.deltaTime, directionalInput);
         flipSprite();
@@ -88,6 +105,19 @@ public class MyPlayer : MonoBehaviour
             velocity.x = (rc.collisions.faceDir == 1) ? 0 : -0.001f;
         }
 
+        //Apparantly, Color isn't something you can modify like transform.position
+        //Reduce transparency by half when hurt.
+        Color c = render.color;
+        if (invincible)
+        {
+            c.a = 0.5f;
+        }
+        else
+        {
+            c.a = 1f;
+        }
+        render.color = c;
+
         //Check if should wall slide
         CheckWallSlide();
 
@@ -116,12 +146,12 @@ public class MyPlayer : MonoBehaviour
         //When landing, reset double jump
         if (rc.collisions.below)
         {
-            animator.SetBool("grounded", true);
+            //animator.SetBool("grounded", true);
             isDoubleJumping = false;
         }
         else
         {
-            animator.SetBool("grounded", false);
+            //animator.SetBool("grounded", false);
             //If in any situation where player isn't grounded, then he is not standing in a platform;
             rc.collisions.standingOnPlatform = false;
         }
@@ -198,6 +228,86 @@ public class MyPlayer : MonoBehaviour
     private void resetWallJumping()
     {
         isWallJumping = false;
+    }
+
+    public int GetPlayerID()
+    {
+        return this.playerID;
+    }
+
+    public void SetPlayerID(int playerID)
+    {
+        if (playerID < 1 || playerID > 2)
+        {
+            throw new System.Exception("Player's ID must be within 1 or 2.");
+        }
+        this.playerID = playerID;
+    }
+
+    /// <summary>
+	/// Resets the invincble boolean. Used by OnTriggerEnter2D, to return player to vulnerable state 
+	/// after slight moment of invincibility.
+	/// </summary>
+	private void resetInvincible()
+    {
+        this.invincible = false;
+    }
+
+    private void DetermineIfBallNotCaught()
+    {
+        if (!ballCaught)
+        {
+            // Player got hit (didn't catch the ball).
+            Debug.Log("Player " + this.playerID + " got HIT!");
+
+            // Bounce the ball off the player appropriately
+            this.ballBounceDirection = this.ball.GetComponent<BallController>().throwDirection;
+            this.ballBounceDirection = ballBounceDirection.normalized * this.ball.GetComponent<BallController>().throwForce;
+            this.ballBounceDirection.x *= -1;
+            this.ball.GetComponent<Rigidbody2D>().AddForce(ballBounceDirection);
+
+            switch (playerID)
+            {
+                case 1:
+                    velocity.x = -ballHitPushBack;
+                    break;
+                case 2:
+                    velocity.x = -ballHitPushBack;
+                    break;
+                default:
+                    Debug.LogError("Hit player with unknown playerID!");
+                    break;
+            }
+
+            this.ball = null;
+
+            //Become invulnerable for 2 seconds
+            invincible = true;
+            Invoke("resetInvincible", invulnerableTime);
+        }
+
+        this.ballTouch = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ball" 
+            && collision.gameObject.GetComponent<BallController>().throwerId != this.playerID
+            && collision.gameObject.GetComponent<BallController>().throwerId != -1
+            && !invincible)
+        {
+            this.ball = collision.gameObject;
+
+            // Stop movement of the ball.
+            this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            // Stop movement of the player.
+            this.velocity = Vector2.zero;
+            SetDirectionalInput(Vector2.zero);
+
+            this.ballTouch = true;
+            Invoke("DetermineIfBallNotCaught", CATCH_TIME);
+        }
     }
 
 }

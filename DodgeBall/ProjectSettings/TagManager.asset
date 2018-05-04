@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MiddleWall
   - Ball
+  - Arena
   layers:
   - Default
   - TransparentFX

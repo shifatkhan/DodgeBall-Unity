@@ -48,7 +48,7 @@ public class MyController2D : MyRaycastController {
 
 		transform.Translate (moveAmount);
 
-		Debug.Log ("standing: " + standingOnMovingPlatform);
+		//Debug.Log ("standing: " + standingOnMovingPlatform);
 
 		if (standingOnMovingPlatform) {
 			print ("STANDING");

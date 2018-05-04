@@ -9,6 +9,9 @@ public class BallController : MonoBehaviour
 
     public float throwForce = 3500f;
 
+    // Used to determine how to bounce off a player.
+    public Vector2 throwDirection;
+
     // Number that tells us if player 1 or player 2 threw the ball.
     public int throwerId = 2;
     
@@ -26,26 +29,16 @@ public class BallController : MonoBehaviour
 
 		if (Input.GetMouseButtonDown (0))
         {
-            rigidBody.AddForce(mouseDir * throwForce);
-		}
+            this.throwDirection = mouseDir * throwForce;
+            rigidBody.AddForce(throwDirection);
+        }
 	}
-
-    /// <summary>
-    /// This method should make it so the ball doesn't interact with the MiddleWall.
-    /// However, it collides with it the first time, and then it's fine. We want it
-    /// to never collide (not even on the first time).
-    /// 
-    /// This method has been replaced by:
-    /// Edit > Project Settings > Physics2D > Layer Collision Matrix
-    /// </summary>
-    /// <param name="collision"></param>
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // REMOVE IF NOT NEEDED
-        if (collision.gameObject.tag == "MiddleWall")
+        if (collision.gameObject.tag == "Arena")
         {
-            Debug.Log("Ball collided with MiddleWall");
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+            throwerId = -1;
         }
     }
 }
