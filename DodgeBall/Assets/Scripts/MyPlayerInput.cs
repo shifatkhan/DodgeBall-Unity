@@ -15,25 +15,39 @@ public class MyPlayerInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!player.ballTouch)
-        {
-            //Move
-		    input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-		    player.SetDirectionalInput (input);
+        if (!player.ballTouch) {
 
-		    //jump
-		    if (Input.GetKeyDown ("j")) {
-			    player.OnJumpInputDown ();
-		    }
+            if (player.playerID == 1) {
+                //Move
+                input = new Vector2(Input.GetAxisRaw("Horizontal_P1"), Input.GetAxisRaw("Vertical_P1"));
+                player.SetDirectionalInput(input);
 
-		    if (Input.GetKeyUp ("j")) {
-			    player.OnJumpInputUp();
-		    }
+                //Jump
+                if (Input.GetButtonDown("Jump_P1"))
+                {
+                    player.OnJumpInputDown();
+                }
 
-		    //dash
-		    if (Input.GetKeyDown ("k")) {
-			    player.OnDashInputDown ();
-		    }
+                if (Input.GetButtonUp("Jump_P1"))
+                {
+                    player.OnJumpInputUp();
+                }
+
+                //dash
+                if (Input.GetButtonDown("Dash_P1")) {
+                    player.OnDashInputDown();
+                }
+            }
+            else if(player.playerID == 2)
+            {
+                input = new Vector2(Input.GetAxisRaw("Horizontal_P2"), Input.GetAxisRaw("Vertical_P2"));
+                player.SetDirectionalInput(input);
+
+                if (Input.GetButtonDown("Jump_P2"))
+                {
+                    player.OnJumpInputDown();
+                }
+            }
         }
 
         // Catch the ball.

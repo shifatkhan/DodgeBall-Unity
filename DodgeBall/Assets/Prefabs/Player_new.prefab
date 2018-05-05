@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd3deb89e19178c41a8cf6f5fc6ee52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerID: 1
   ballTouch: 0
   ballCaught: 0
   ballHitPushBack: 4

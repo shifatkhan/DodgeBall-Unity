@@ -7,7 +7,7 @@ using UnityEngine;
 public class MyPlayer : MonoBehaviour
 {
     // Identity for player 1 or player 2.
-    private int playerID = 1;
+    public int playerID = 1;
 
     // Delta time in which the player must catch the ball.
     public readonly float CATCH_TIME = 0.5f;
@@ -272,7 +272,7 @@ public class MyPlayer : MonoBehaviour
                     velocity.x = -ballHitPushBack;
                     break;
                 case 2:
-                    velocity.x = -ballHitPushBack;
+                    velocity.x = ballHitPushBack;
                     break;
                 default:
                     Debug.LogError("Hit player with unknown playerID!");
