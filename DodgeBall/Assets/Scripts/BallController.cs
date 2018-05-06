@@ -16,7 +16,7 @@ public class BallController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Reset the ball's thrower id.
-        if (collision.gameObject.tag == "Arena")
+        if (collision.gameObject.tag == "Arena" || collision.gameObject.tag == "Ball")
         {
             throwerId = -1;
         }

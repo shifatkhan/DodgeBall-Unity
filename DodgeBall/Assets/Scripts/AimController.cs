@@ -42,7 +42,6 @@ public class AimController : MonoBehaviour {
     {
         if (aiming)
         {
-            Debug.Log("z: " + transform.localRotation.z);
             if (playerID == 1 && transform.localRotation.z > 0.45)
             {
                 ResetArrow();
