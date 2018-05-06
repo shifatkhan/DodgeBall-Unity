@@ -67,5 +67,18 @@ public class MyPlayerInput : MonoBehaviour {
             player.ballCaught = true;
             player.ballTouch = false;
         }
+
+        // Aim the ball.
+        if (Input.GetKey("l") && player.ballCaught && !player.ballTouch)
+        {
+
+        }
+
+        // Throw the ball at the aimed direction.
+        if (Input.GetKeyUp("l") && player.ballCaught && !player.ballTouch)
+        {
+            Debug.Log("Threw the ball");
+            player.ballCaught = false;
+        }
     }
 }

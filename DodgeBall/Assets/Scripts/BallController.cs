@@ -13,6 +13,7 @@ public class BallController : MonoBehaviour
     public Vector2 throwDirection;
 
     // Number that tells us if player 1 or player 2 threw the ball.
+    // It's equal to -1 if it hit the wall.
     public int throwerId = 2;
     
 	void Start ()
@@ -36,6 +37,7 @@ public class BallController : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Reset the ball's thrower id.
         if (collision.gameObject.tag == "Arena")
         {
             throwerId = -1;
