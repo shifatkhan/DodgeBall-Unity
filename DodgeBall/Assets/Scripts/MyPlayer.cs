@@ -7,12 +7,12 @@ using UnityEngine;
 public class MyPlayer : MonoBehaviour
 {
     // Identity for player 1 or player 2.
-    private int playerID = 1;
+    public int playerID = 1;
 
     // Delta time in which the player must catch the ball.
     public readonly float CATCH_TIME = 0.5f;
     // Ball Touch is when the ball initially touches the player.
-    // Ball caught depicts wether the player is holding the ball or not.
+    // Ball caught depicts whether the player is holding the ball or not.
     public bool ballTouch = false;
     public bool ballCaught = false;
     public float ballHitPushBack = 4f;
@@ -38,7 +38,7 @@ public class MyPlayer : MonoBehaviour
 
     public bool isDashing;
     public float dashDistance = 21f;
-    private float timeToReachDashVelocity = .8f;
+    public float timeToReachDashVelocity = .075f;
 
     public bool isWallSliding;
     public bool isWallJumping;
@@ -180,7 +180,7 @@ public class MyPlayer : MonoBehaviour
             velocity.y = wallJumpDistance.y;
             isDoubleJumping = false;
             isWallJumping = true;
-            Invoke("resetWallJumping", 0.2f);
+            Invoke("ResetWallJumping", 0.2f);
             Debug.Log("Wall Jump");
         }
 
@@ -217,38 +217,33 @@ public class MyPlayer : MonoBehaviour
 
     public void OnDashInputDown()
     {
-        if (!isDashing && rc.collisions.below)
+        if (!isDashing)
         {
-            velocity.x = (rc.collisions.faceDir * dashDistance) / timeToReachDashVelocity;
-            isDashing = true;
-            Debug.Log("Dash");
+            //if you're not holding any direction while dashign, default to facing direction.
+            //Ternary operator to avoid dashing in wrong direction if you don't hold left/right
+            float xdir = (directionalInput.x == 0 && directionalInput.y == 0) ? rc.collisions.faceDir : directionalInput.x;            
+            
+            //keeps direction so that you can't change direction while dashing
+            Vector2 dir = new Vector2(xdir, directionalInput.y);
+
+            StartCoroutine("Dashing", dir);
         }
     }
 
-    private void resetWallJumping()
+    private void ResetDashing()
+    {
+        isDashing = false;
+    }
+    private void ResetWallJumping()
     {
         isWallJumping = false;
-    }
-
-    public int GetPlayerID()
-    {
-        return this.playerID;
-    }
-
-    public void SetPlayerID(int playerID)
-    {
-        if (playerID < 1 || playerID > 2)
-        {
-            throw new System.Exception("Player's ID must be within 1 or 2.");
-        }
-        this.playerID = playerID;
     }
 
     /// <summary>
 	/// Resets the invincble boolean. Used by DetermineIfBallNotCaught, to return player to vulnerable state 
 	/// after slight moment of invincibility.
 	/// </summary>
-	private void resetInvincible()
+	private void ResetInvincible()
     {
         this.invincible = false;
     }
@@ -283,7 +278,7 @@ public class MyPlayer : MonoBehaviour
 
             //Become invulnerable for 2 seconds
             invincible = true;
-            Invoke("resetInvincible", invulnerableTime);
+            Invoke("ResetInvincible", invulnerableTime);
         }
 
         this.ballTouch = false;
@@ -310,4 +305,50 @@ public class MyPlayer : MonoBehaviour
         }
     }
 
+    /*
+     * 
+     * PROPERTIES
+     * 
+     * 
+     * */
+
+    public int PlayerID
+    {
+        get
+        {
+            return this.playerID;
+        }
+
+        set
+        {
+            if (value < 1 || value > 2)
+            {
+                throw new System.Exception("Player's ID must be within 1 or 2.");
+            }
+            this.playerID = value;
+        }
+    }
+
+    
+    /**
+     * 
+     * COROUTINES
+     * 
+     */
+    IEnumerator Dashing(Vector2 direction)
+    {
+        isDashing = true;
+        float timer = 0; //Timer to check duration of dash
+
+        while(0.1f > timer) //how long to dash for i.e dashing for 0.1 sec
+        {
+            timer += Time.deltaTime;
+            velocity.x = (dashDistance * direction.x) / timeToReachDashVelocity;
+            velocity.y = (dashDistance * direction.y) / timeToReachDashVelocity;
+            yield return 0; //go to next frame
+        }
+
+        yield return new WaitForSeconds(1f); //cooldown for dashing
+        isDashing = false;
+    }
 }
