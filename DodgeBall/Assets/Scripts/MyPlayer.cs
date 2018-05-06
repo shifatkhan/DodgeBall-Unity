@@ -245,7 +245,7 @@ public class MyPlayer : MonoBehaviour
     }
 
     /// <summary>
-	/// Resets the invincble boolean. Used by OnTriggerEnter2D, to return player to vulnerable state 
+	/// Resets the invincble boolean. Used by DetermineIfBallNotCaught, to return player to vulnerable state 
 	/// after slight moment of invincibility.
 	/// </summary>
 	private void resetInvincible()
@@ -255,7 +255,7 @@ public class MyPlayer : MonoBehaviour
 
     private void DetermineIfBallNotCaught()
     {
-        if (!ballCaught)
+        if (!ballCaught && ballTouch)
         {
             // Player got hit (didn't catch the ball).
             Debug.Log("Player " + this.playerID + " got HIT!");
@@ -272,7 +272,7 @@ public class MyPlayer : MonoBehaviour
                     velocity.x = -ballHitPushBack;
                     break;
                 case 2:
-                    velocity.x = -ballHitPushBack;
+                    velocity.x = ballHitPushBack;
                     break;
                 default:
                     Debug.LogError("Hit player with unknown playerID!");
