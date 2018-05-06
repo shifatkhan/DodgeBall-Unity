@@ -7,10 +7,12 @@ public class MyPlayerInput : MonoBehaviour {
 
 	private MyPlayer player;
 	private Vector2 input;
+    private AimController aimController;
 
 	// Use this for initialization
 	void Start () {
 		player = GetComponent<MyPlayer> ();
+        aimController = transform.GetChild(0).GetComponent<AimController>();
 	}
 	
 	// Update is called once per frame
@@ -63,22 +65,29 @@ public class MyPlayerInput : MonoBehaviour {
         // Catch the ball.
         if (Input.GetButtonDown("ThrowCatch_P1") && player.ballTouch)
         {
-            Destroy(player.ball);
-            player.ballCaught = true;
-            player.ballTouch = false;
+            player.CatchTheBall();
         }
 
         // Aim the ball.
-        if (Input.GetKey("l") && player.ballCaught && !player.ballTouch)
+        if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballTouch && player.canThrow)
         {
-
+            aimController.MakeSpriteVisible(true);
+            aimController.aiming = true;
         }
 
         // Throw the ball at the aimed direction.
-        if (Input.GetKeyUp("l") && player.ballCaught && !player.ballTouch)
+        if (Input.GetButtonUp("ThrowCatch_P1") && player.ballCaught && !player.ballTouch)
         {
-            Debug.Log("Threw the ball");
-            player.ballCaught = false;
+            player.canThrow = true;
+
+            if (aimController.aiming)
+            {
+                player.throwBall();
+                player.ballCaught = false;
+                aimController.aiming = false;
+                aimController.MakeSpriteVisible(false);
+                player.canThrow = false;
+            }
         }
     }
 }

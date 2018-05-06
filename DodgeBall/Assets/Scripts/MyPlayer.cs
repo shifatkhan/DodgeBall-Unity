@@ -15,8 +15,11 @@ public class MyPlayer : MonoBehaviour
     // Ball caught depicts whether the player is holding the ball or not.
     public bool ballTouch = false;
     public bool ballCaught = false;
+    public bool canThrow = false;
     public float ballHitPushBack = 4f;
+    public float throwForce = 4000f;
     public GameObject ball = null;
+    public GameObject ballPrefab;
     private Vector2 ballBounceDirection;
     
     public bool invincible = false;
@@ -261,6 +264,9 @@ public class MyPlayer : MonoBehaviour
             this.ballBounceDirection.x *= -1;
             this.ball.GetComponent<Rigidbody2D>().AddForce(ballBounceDirection);
 
+            // Reset the ball's thrower ID
+            this.ball.GetComponent<BallController>().throwerId = -1;
+
             switch (playerID)
             {
                 case 1:
@@ -284,24 +290,56 @@ public class MyPlayer : MonoBehaviour
         this.ballTouch = false;
     }
 
+    public void throwBall()
+    {
+        if (ballCaught && !ballTouch)
+        {
+            Debug.Log("Player "+playerID+" Threw the ball");
+            this.ballPrefab.GetComponent<BallController>().throwerId = this.playerID;
+
+            // Instantiate the ball with the rotation of the Aim. The first child object is the Aim gameObject.
+            GameObject clone = Instantiate(this.ballPrefab, transform.GetChild(0).position, transform.GetChild(0).rotation);
+
+            // Give the ball a force to simulate a throw.
+            clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.forward * throwForce);
+            
+        }
+    }
+
+    public void CatchTheBall()
+    {
+        Destroy(this.ball);
+        ballCaught = true;
+        ballTouch = false;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ball" 
-            && collision.gameObject.GetComponent<BallController>().throwerId != this.playerID
-            && collision.gameObject.GetComponent<BallController>().throwerId != -1
-            && !invincible)
+        if (collision.gameObject.tag == "Ball")
         {
-            this.ball = collision.gameObject;
+            if(collision.gameObject.GetComponent<BallController>().throwerId != this.playerID
+            && collision.gameObject.GetComponent<BallController>().throwerId != -1 && !invincible)
+            {
+                // Player got hit by other player.
 
-            // Stop movement of the ball.
-            this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                this.ball = collision.gameObject;
 
-            // Stop movement of the player.
-            this.velocity = Vector2.zero;
-            SetDirectionalInput(Vector2.zero);
+                // Stop movement of the ball.
+                this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-            this.ballTouch = true;
-            Invoke("DetermineIfBallNotCaught", CATCH_TIME);
+                // Stop movement of the player.
+                this.velocity = Vector2.zero;
+                SetDirectionalInput(Vector2.zero);
+
+                this.ballTouch = true;
+                Invoke("DetermineIfBallNotCaught", CATCH_TIME);
+            }
+            else if (collision.gameObject.GetComponent<BallController>().throwerId == -1 && !ballCaught && !ballTouch)
+            {
+                this.ball = collision.gameObject;
+                CatchTheBall();
+                canThrow = true;
+            }
         }
     }
 

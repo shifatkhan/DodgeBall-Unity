@@ -19,10 +19,12 @@ public class BallController : MonoBehaviour
 	void Start ()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        //rigidBody.AddForce(transform.forward * throwForce);
     }
 
-	void FixedUpdate ()
+    void FixedUpdate ()
     {
+        /*// Test code that controls the ball with the mouse.
 		var mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		var mouseDir = mousePos - gameObject.transform.position;
 		mouseDir.z = 0.0f;
@@ -33,6 +35,7 @@ public class BallController : MonoBehaviour
             this.throwDirection = mouseDir * throwForce;
             rigidBody.AddForce(throwDirection);
         }
+        */
 	}
     
     private void OnCollisionEnter2D(Collision2D collision)
