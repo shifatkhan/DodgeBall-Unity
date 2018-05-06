@@ -294,15 +294,14 @@ public class MyPlayer : MonoBehaviour
     {
         if (ballCaught && !ballTouch)
         {
-            Debug.Log("Player "+playerID+" Threw the ball");
+           
             this.ballPrefab.GetComponent<BallController>().throwerId = this.playerID;
 
             // Instantiate the ball with the rotation of the Aim. The first child object is the Aim gameObject.
             GameObject clone = Instantiate(this.ballPrefab, transform.GetChild(0).position, transform.GetChild(0).rotation);
 
             // Give the ball a force to simulate a throw.
-            clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.forward * throwForce);
-            
+            clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.right * throwForce);
         }
     }
 

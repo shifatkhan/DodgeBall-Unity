@@ -39,6 +39,34 @@ public class MyPlayerInput : MonoBehaviour {
                 if (Input.GetButtonDown("Dash_P1")) {
                     player.OnDashInputDown();
                 }
+
+                // Catch the ball.
+                if (Input.GetButtonDown("ThrowCatch_P1") && player.ballTouch)
+                {
+                    player.CatchTheBall();
+                }
+
+                // Aim the ball.
+                if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballTouch && player.canThrow)
+                {
+                    aimController.MakeSpriteVisible(true);
+                    aimController.aiming = true;
+                }
+
+                // Throw the ball at the aimed direction.
+                if (Input.GetButtonUp("ThrowCatch_P1") && player.ballCaught && !player.ballTouch)
+                {
+                    player.canThrow = true;
+
+                    if (aimController.aiming)
+                    {
+                        player.throwBall();
+                        player.ballCaught = false;
+                        aimController.aiming = false;
+                        aimController.MakeSpriteVisible(false);
+                        player.canThrow = false;
+                    }
+                }
             }
             else if(player.playerID == 2)
             {
@@ -59,34 +87,34 @@ public class MyPlayerInput : MonoBehaviour {
                 {
                     player.OnDashInputDown();
                 }
-            }
-        }
 
-        // Catch the ball.
-        if (Input.GetButtonDown("ThrowCatch_P1") && player.ballTouch)
-        {
-            player.CatchTheBall();
-        }
+                // Catch the ball.
+                if (Input.GetButtonDown("ThrowCatch_P2") && player.ballTouch)
+                {
+                    player.CatchTheBall();
+                }
 
-        // Aim the ball.
-        if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballTouch && player.canThrow)
-        {
-            aimController.MakeSpriteVisible(true);
-            aimController.aiming = true;
-        }
+                // Aim the ball.
+                if (Input.GetButton("ThrowCatch_P2") && player.ballCaught && !player.ballTouch && player.canThrow)
+                {
+                    aimController.MakeSpriteVisible(true);
+                    aimController.aiming = true;
+                }
 
-        // Throw the ball at the aimed direction.
-        if (Input.GetButtonUp("ThrowCatch_P1") && player.ballCaught && !player.ballTouch)
-        {
-            player.canThrow = true;
+                // Throw the ball at the aimed direction.
+                if (Input.GetButtonUp("ThrowCatch_P2") && player.ballCaught && !player.ballTouch)
+                {
+                    player.canThrow = true;
 
-            if (aimController.aiming)
-            {
-                player.throwBall();
-                player.ballCaught = false;
-                aimController.aiming = false;
-                aimController.MakeSpriteVisible(false);
-                player.canThrow = false;
+                    if (aimController.aiming)
+                    {
+                        player.throwBall();
+                        player.ballCaught = false;
+                        aimController.aiming = false;
+                        aimController.MakeSpriteVisible(false);
+                        player.canThrow = false;
+                    }
+                }
             }
         }
     }

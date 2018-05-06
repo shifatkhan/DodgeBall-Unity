@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwForce: 4000
   throwDirection: {x: 0, y: 0}
-  throwerId: 2
+  throwerId: -1
 --- !u!212 &212460168917698618
 SpriteRenderer:
   m_ObjectHideFlags: 1
