@@ -47,11 +47,21 @@ public class MyPlayerInput : MonoBehaviour {
                 {
                     player.OnJumpInputDown();
                 }
+                if (Input.GetButtonUp("Jump_P2"))
+                {
+                    player.OnJumpInputUp();
+                }
+
+                //dash
+                if (Input.GetButtonDown("Dash_P2"))
+                {
+                    player.OnDashInputDown();
+                }
             }
         }
 
         // Catch the ball.
-        if (Input.GetKeyDown("l") && player.ballTouch)
+        if (Input.GetButtonDown("ThrowCatch_P1") && player.ballTouch)
         {
             Destroy(player.ball);
             player.ballCaught = true;

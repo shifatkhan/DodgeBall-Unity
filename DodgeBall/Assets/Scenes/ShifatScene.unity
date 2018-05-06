@@ -240,6 +240,21 @@ Prefab:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 114345018767719398, guid: da700fad89c0424408fa2ff2bce8941e,
+        type: 2}
+      propertyPath: dashDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345018767719398, guid: da700fad89c0424408fa2ff2bce8941e,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345018767719398, guid: da700fad89c0424408fa2ff2bce8941e,
+        type: 2}
+      propertyPath: timeToReachDashVelocity
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
   m_IsPrefabParent: 0
@@ -371,7 +386,8 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isDoubleJumping: 0
   isDashing: 0
-  dashDistance: 21
+  dashDistance: 5
+  timeToReachDashVelocity: 0.4
   isWallSliding: 0
   isWallJumping: 0
   wallSlideDirection: 0
@@ -411,7 +427,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.005140245, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -422,7 +438,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 0.5089344, y: 1.28}
   m_EdgeRadius: 0
 --- !u!114 &1542800687
 MonoBehaviour:
