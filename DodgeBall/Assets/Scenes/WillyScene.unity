@@ -433,11 +433,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4302867502048540, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.71924186
+      value: -2.745
       objectReference: {fileID: 0}
     - target: {fileID: 4302867502048540, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.9308052
+      value: -2.746
       objectReference: {fileID: 0}
     - target: {fileID: 4302867502048540, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -481,6 +481,10 @@ Prefab:
         type: 2}
       propertyPath: timeToReachDashVelocity
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021366483102288, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da700fad89c0424408fa2ff2bce8941e, type: 2}
