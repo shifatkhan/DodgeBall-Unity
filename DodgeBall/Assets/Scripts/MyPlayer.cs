@@ -8,7 +8,7 @@ public class MyPlayer : MonoBehaviour
 {
     // Identity for player 1 or player 2.
     public int playerID = 1;
-
+    public int health = 3;
     // Delta time in which the player must catch the ball.
     public readonly float CATCH_TIME = 0.5f;
     // Ball Touch is when the ball initially touches the player.
@@ -255,16 +255,19 @@ public class MyPlayer : MonoBehaviour
     {
         if (!ballCaught && ballTouch)
         {
-            PlayerHit();
+            ReceiveDamage();
         }
 
         this.ballTouch = false;
     }
 
-    public void PlayerHit()
+    public void ReceiveDamage()
     {
         // Player got hit (didn't catch the ball).
         Debug.Log("Player " + this.playerID + " got HIT!");
+
+        //Reduce their health points.
+        health--;
 
         // Bounce the ball off the player appropriately
         this.ballBounceDirection = this.ball.GetComponent<BallController>().throwDirection;
@@ -354,7 +357,7 @@ public class MyPlayer : MonoBehaviour
                     this.velocity = Vector2.zero;
                     SetDirectionalInput(Vector2.zero);
 
-                    PlayerHit();
+                    ReceiveDamage();
                 }
             }
             else if (collision.gameObject.GetComponent<BallController>().throwerId == -1 && !ballCaught && !ballTouch)
