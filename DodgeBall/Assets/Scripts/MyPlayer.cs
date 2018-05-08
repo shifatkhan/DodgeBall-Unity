@@ -322,39 +322,45 @@ public class MyPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Ball")
         {
             if(collision.gameObject.GetComponent<BallController>().throwerId != this.playerID
-            && collision.gameObject.GetComponent<BallController>().throwerId != -1 && !invincible && !ballTouch)
+            && collision.gameObject.GetComponent<BallController>().throwerId != -1)
             {
-                if (!ballCaught)
+                if (invincible)
                 {
-                    // Player got hit by other player.
-
-                    this.ball = collision.gameObject;
-
-                    // Stop movement of the ball.
-                    this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-                    // Stop movement of the player.
-                    this.velocity = Vector2.zero;
-                    SetDirectionalInput(Vector2.zero);
-
-                    this.ballTouch = true;
-                    Invoke("DetermineIfBallNotCaught", CATCH_TIME);
+                    collision.gameObject.GetComponent<BallController>().throwerId = -1;
                 }
-                else
+                else if (!invincible && !ballTouch)
                 {
-                    // Player got hit by other player while holding a ball.
-                    // Player got hit by other player.
+                    if (!ballCaught)
+                    {
+                        // Player got hit by other player.
 
-                    this.ball = collision.gameObject;
+                        this.ball = collision.gameObject;
 
-                    // Stop movement of the ball.
-                    this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                        // Stop movement of the ball.
+                        this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-                    // Stop movement of the player.
-                    this.velocity = Vector2.zero;
-                    SetDirectionalInput(Vector2.zero);
+                        // Stop movement of the player.
+                        this.velocity = Vector2.zero;
+                        SetDirectionalInput(Vector2.zero);
 
-                    PlayerHit();
+                        this.ballTouch = true;
+                        Invoke("DetermineIfBallNotCaught", CATCH_TIME);
+                    }
+                    else
+                    {
+                        // Player got hit by other player while holding a ball.
+
+                        this.ball = collision.gameObject;
+
+                        // Stop movement of the ball.
+                        this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+                        // Stop movement of the player.
+                        this.velocity = Vector2.zero;
+                        SetDirectionalInput(Vector2.zero);
+
+                        PlayerHit();
+                    }
                 }
             }
             else if (collision.gameObject.GetComponent<BallController>().throwerId == -1 && !ballCaught && !ballTouch)
