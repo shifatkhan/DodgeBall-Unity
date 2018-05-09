@@ -9,15 +9,23 @@ public class GameManager : MonoBehaviour {
 
     public GameObject HealthManagerScript;
 
-    public GameObject HealthManager;
-
 	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+
+    // Update is called once per frame
+    void Update() {
+        HealthManagerScript.gameObject.GetComponent<HealthManager>().UpdateHealthUI(p1.health, p2.health);
+        if (p1.health == 0 || p2.health == 0)
+        {
+            EndGame();
+        }
 	}
+
+    void EndGame()
+    {
+        //end game
+        print("done");
+    }
 }

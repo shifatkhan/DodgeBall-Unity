@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthManager : MonoBehaviour {
-
-    public int hp_p1;
-    public int hp_p2;
+public class HealthManager : MonoBehaviour
+{
 
     private GameObject heart1_p1;
     private GameObject heart2_p1;
@@ -24,37 +22,42 @@ public class HealthManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        hp_p1 = 3;
-        hp_p2 = 3;
+        heart1_p1 = GameObject.Find("heart_1");
+        heart2_p1 = GameObject.Find("heart_2");
+        heart3_p1 = GameObject.Find("heart_3");
 
-        heart1_p1 = GameObject.Find("heart1");
-        heart2_p1 = GameObject.Find("heart2");
-        heart3_p1 = GameObject.Find("heart3");
-
-        heart1_p2 = GameObject.Find("heart4");
-        heart2_p2 = GameObject.Find("heart5");
-        heart3_p2 = GameObject.Find("heart6");
+        heart1_p2 = GameObject.Find("heart_4");
+        heart2_p2 = GameObject.Find("heart_5");
+        heart3_p2 = GameObject.Find("heart_6");
     }
 
-    public void UpdateHealthUI(int player, int remHealth)
+    public void UpdateHealthUI(int p1Health, int p2Health)
     {
-        if(player == 1)
+        //Update UI
+        switch (p1Health)
         {
-            hp_p1--;
-
-            //Update UI
-            if (remHealth == 2)
-            {
+            case 2:
                 heart3_p1.GetComponent<Image>().sprite = empty;
-            }
-            else if (remHealth == 1)
-            {
+                break;
+            case 1:
                 heart2_p1.GetComponent<Image>().sprite = empty;
-            }
-            else if (remHealth == 0)
-            {
+                break;
+            case 0:
                 heart1_p1.GetComponent<Image>().sprite = empty;
-            }
+                break;
+        }
+
+        switch (p2Health)
+        {
+            case 2:
+                heart3_p2.GetComponent<Image>().sprite = empty;
+                break;
+            case 1:
+                heart2_p2.GetComponent<Image>().sprite = empty;
+                break;
+            case 0:
+                heart1_p2.GetComponent<Image>().sprite = empty;
+                break;
         }
     }
 }
