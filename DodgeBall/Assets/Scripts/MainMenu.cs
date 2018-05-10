@@ -7,6 +7,6 @@ public class MainMenu : MonoBehaviour {
 
 	public void PlayGame()
     {
-        SceneManager.LoadScene("WillyScene");
+        SceneManager.LoadScene("WilliamScene");
     }
 }
