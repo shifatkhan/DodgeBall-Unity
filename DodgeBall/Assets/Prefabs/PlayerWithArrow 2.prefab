@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1106557472217616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.62, y: -2.9308052, z: 0}
+  m_LocalPosition: {x: 1.33, y: -2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4763356911810248}
@@ -175,7 +175,7 @@ MonoBehaviour:
   ballCaught: 0
   canThrow: 0
   ballHitPushBack: 4
-  throwForce: 4000
+  throwForce: 5500
   ball: {fileID: 0}
   ballPrefab: {fileID: 1112887453788618, guid: 865cd06a5d1a27440855640332f38a1b, type: 2}
   invincible: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   horizontalRayCount: 0
   verticalRayCount: 0
   horizontalRaySpacing: 0

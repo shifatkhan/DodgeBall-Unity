@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public float throwForce = 3500f;
-
     // Used to determine how to bounce off a player.
     public Vector2 throwDirection;
 

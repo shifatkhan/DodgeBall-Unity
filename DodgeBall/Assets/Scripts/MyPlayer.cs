@@ -268,7 +268,7 @@ public class MyPlayer : MonoBehaviour
 
         // Bounce the ball off the player appropriately
         this.ballBounceDirection = this.ball.GetComponent<BallController>().throwDirection;
-        this.ballBounceDirection = ballBounceDirection.normalized * this.ball.GetComponent<BallController>().throwForce;
+        this.ballBounceDirection = ballBounceDirection.normalized * throwForce;
         this.ballBounceDirection.x *= -1;
         this.ball.GetComponent<Rigidbody2D>().AddForce(ballBounceDirection);
 
