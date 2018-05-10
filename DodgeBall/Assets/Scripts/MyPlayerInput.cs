@@ -97,6 +97,7 @@ public class MyPlayerInput : MonoBehaviour {
             // Catch the ball.
             if (Input.GetButtonDown("ThrowCatch_P2") && player.ballTouch)
             {
+                Debug.Log("Player 2 caught the ball");
                 player.CatchTheBall();
             }
 
