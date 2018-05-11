@@ -28,9 +28,7 @@ public class BgMusicController : MonoBehaviour {
 
     // Use this for initialization
     private void Start () {
-        // Play the intro followed by the loop.
-        titleIntro.PlayScheduled (AudioSettings.dspTime + 0.25f);
-        titleLoop.PlayScheduled (AudioSettings.dspTime + 0.25f + titleIntro.clip.length);
+        
 	}
 
     private void OnEnable() {
@@ -55,17 +53,54 @@ public class BgMusicController : MonoBehaviour {
     }
 
     /// <summary>
+    /// Switch music to the title music.
+    /// </summary>
+    public void PlayTitleMusic()
+    {
+        if (!titleIntro.isPlaying && !titleLoop.isPlaying)
+        {
+            gameIntro.Stop();
+            gameLoop.Stop();
+            tenseIntro.Stop();
+            tenseLoop.Stop();
+
+            titleIntro.PlayScheduled(AudioSettings.dspTime + 0.25f);
+            titleLoop.PlayScheduled(AudioSettings.dspTime + 0.25f + titleIntro.clip.length);
+        }
+    }
+
+    /// <summary>
+    /// Switch music to the game music.
+    /// </summary>
+    public void PlayGameMusic()
+    {
+        if(!gameIntro.isPlaying && !gameLoop.isPlaying)
+        {
+            titleIntro.Stop();
+            titleLoop.Stop();
+            tenseIntro.Stop();
+            tenseLoop.Stop();
+
+            gameIntro.PlayScheduled(AudioSettings.dspTime + 0.25f);
+            gameLoop.PlayScheduled(AudioSettings.dspTime + 0.25f + gameIntro.clip.length);
+        }
+    }
+
+    /// <summary>
     /// Switch music to a tense music. Played when both players are low health.
     /// </summary>
     public void PlayTenseMusic()
     {
-        titleIntro.Stop();
-        titleLoop.Stop();
-        gameIntro.Stop();
-        gameLoop.Stop();
+        if (!tenseIntro.isPlaying && !tenseLoop.isPlaying)
+        {
+            titleIntro.Stop();
+            titleLoop.Stop();
+            gameIntro.Stop();
+            gameLoop.Stop();
 
-        tenseIntro.PlayScheduled(AudioSettings.dspTime + 0.25f);
-        tenseLoop.PlayScheduled(AudioSettings.dspTime + 0.25f + tenseIntro.clip.length);
+            tenseIntro.PlayScheduled(AudioSettings.dspTime + 0.25f);
+            tenseLoop.PlayScheduled(AudioSettings.dspTime + 0.25f + tenseIntro.clip.length);
+        }
     }
 
 	/// <summary>
@@ -81,20 +116,13 @@ public class BgMusicController : MonoBehaviour {
                 titleLoop.Stop ();
 			} else {
                 // Plays a different intro then the gameLoop. Might change this to playing the gameLoop right off the bat.
-                titleLoop.Stop();
-                gameIntro.PlayScheduled(AudioSettings.dspTime + 0.25f);
-                gameLoop.PlayScheduled(AudioSettings.dspTime + 0.25f + titleIntro.clip.length);
+                PlayGameMusic();
 			}
 		}
         else if(scene.name.Equals("Menu"))
         {
-            gameIntro.Stop();
-            gameLoop.Stop();
-            tenseIntro.Stop();
-            tenseLoop.Stop();
-
-            titleIntro.PlayScheduled (AudioSettings.dspTime + 0.25f);
-            titleLoop.PlayScheduled (AudioSettings.dspTime + 0.22f + titleIntro.clip.length);
+            Debug.Log("In OnSceneChange to Menu");
+            PlayTitleMusic();
 		}
 	}
 }

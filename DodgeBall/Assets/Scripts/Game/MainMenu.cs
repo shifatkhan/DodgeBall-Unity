@@ -9,4 +9,9 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene("WilliamScene");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

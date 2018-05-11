@@ -71,7 +71,6 @@ public class MyPlayerInput : MonoBehaviour {
             {
                 Debug.Log("Player 1 caught the ball");
                 player.CatchTheBall();
-                player.playerSoundController.PlaySound("catch");
             }
 
             // Aim the ball.
@@ -89,7 +88,6 @@ public class MyPlayerInput : MonoBehaviour {
                 if (aimController.aiming)
                 {
                     player.throwBall();
-                    player.playerSoundController.PlaySound("throw");
                     player.ballCaught = false;
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);
@@ -104,7 +102,6 @@ public class MyPlayerInput : MonoBehaviour {
             {
                 Debug.Log("Player 2 caught the ball");
                 player.CatchTheBall();
-                player.playerSoundController.PlaySound("catch");
             }
 
             // Aim the ball.
@@ -122,7 +119,6 @@ public class MyPlayerInput : MonoBehaviour {
                 if (aimController.aiming)
                 {
                     player.throwBall();
-                    player.playerSoundController.PlaySound("throw");
                     player.ballCaught = false;
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);

@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
         gameIsPaused = false;
         musicTensedUp = false;
         bgMusicController = GameObject.Find("BGMusic").GetComponent<BgMusicController>();
+        bgMusicController.PlayGameMusic();
 	}
 
     // Update is called once per frame

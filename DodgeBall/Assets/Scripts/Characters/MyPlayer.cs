@@ -293,12 +293,9 @@ public class MyPlayer : MonoBehaviour
         health--;
 
         // Bounce the ball off the player appropriately
-        this.ballBounceDirection.x = this.ball.GetComponent<BallController>().throwDirection.x;
-        this.ballBounceDirection.y = this.ball.GetComponent<BallController>().throwDirection.y;
-        this.ballBounceDirection = ballBounceDirection * throwForce;
-        //this.ballBounceDirection.x *= -1;
-        Debug.Log("Bounce off at " + ballBounceDirection);
-        this.ball.GetComponent<Rigidbody2D>().AddForce(ballBounceDirection);
+        this.ballBounceDirection = this.ball.GetComponent<BallController>().throwDirection;
+        this.ballBounceDirection.x *= -1;
+        this.ball.GetComponent<Rigidbody2D>().AddForce(this.ballBounceDirection);
 
         // Reset the ball's thrower ID
         this.ball.GetComponent<BallController>().throwerId = -1;
@@ -332,10 +329,14 @@ public class MyPlayer : MonoBehaviour
 
             // Instantiate the ball with the rotation of the Aim. The first child object is the Aim gameObject.
             GameObject clone = Instantiate(this.ballPrefab, transform.GetChild(0).position, transform.GetChild(0).rotation);
-            this.ballPrefab.GetComponent<BallController>().throwDirection = clone.transform.right;
-            Debug.Log("Threw ball at " + clone.transform.right);
+
+            // Remember initial throw direction.
+            clone.GetComponent<BallController>().throwDirection = clone.transform.right * throwForce;
+
             // Give the ball a force to simulate a throw.
             clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.right * throwForce);
+
+            playerSoundController.PlaySound("throw");
         }
     }
 
@@ -344,6 +345,7 @@ public class MyPlayer : MonoBehaviour
         Destroy(this.ball);
         ballCaught = true;
         ballTouch = false;
+        playerSoundController.PlaySound("catch");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
