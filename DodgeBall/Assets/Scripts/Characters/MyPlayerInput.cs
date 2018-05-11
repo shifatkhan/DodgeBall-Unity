@@ -9,10 +9,13 @@ public class MyPlayerInput : MonoBehaviour {
 	private Vector2 input;
     private AimController aimController;
 
+    public AudioSource aimingSound;
+
 	// Use this for initialization
 	void Start () {
 		player = GetComponent<MyPlayer> ();
         aimController = transform.GetChild(0).GetComponent<AimController>();
+        player.playerSoundController = GetComponent<MyPlayerSoundController>();
 	}
 	
 	// Update is called once per frame
@@ -68,6 +71,7 @@ public class MyPlayerInput : MonoBehaviour {
             {
                 Debug.Log("Player 1 caught the ball");
                 player.CatchTheBall();
+                player.playerSoundController.PlaySound("catch");
             }
 
             // Aim the ball.
@@ -85,6 +89,7 @@ public class MyPlayerInput : MonoBehaviour {
                 if (aimController.aiming)
                 {
                     player.throwBall();
+                    player.playerSoundController.PlaySound("throw");
                     player.ballCaught = false;
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);
@@ -99,6 +104,7 @@ public class MyPlayerInput : MonoBehaviour {
             {
                 Debug.Log("Player 2 caught the ball");
                 player.CatchTheBall();
+                player.playerSoundController.PlaySound("catch");
             }
 
             // Aim the ball.
@@ -116,6 +122,7 @@ public class MyPlayerInput : MonoBehaviour {
                 if (aimController.aiming)
                 {
                     player.throwBall();
+                    player.playerSoundController.PlaySound("throw");
                     player.ballCaught = false;
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);

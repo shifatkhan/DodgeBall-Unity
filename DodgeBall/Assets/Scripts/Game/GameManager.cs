@@ -14,14 +14,20 @@ public class GameManager : MonoBehaviour {
 
     public GameObject gameoverScreen;
 
+    private BgMusicController bgMusicController;
+
     private bool gameIsPaused;
     private bool gameIsOver;
+
+    private bool musicTensedUp;
 
     // Use this for initialization
     void Start () {
         Time.timeScale = 1f;
         gameIsOver = false;
         gameIsPaused = false;
+        musicTensedUp = false;
+        bgMusicController = GameObject.Find("BGMusic").GetComponent<BgMusicController>();
 	}
 
     // Update is called once per frame
@@ -59,9 +65,14 @@ public class GameManager : MonoBehaviour {
         //Updates the heart ui 
         healthScript.gameObject.GetComponent<HealthManager>().UpdateHealthUI(p1.health, p2.health);
 
-        //If health is 0, game ends
-        if (p1.health == 0 || p2.health == 0)
+        if(!musicTensedUp && (p1.health == 1 || p2.health == 1))
         {
+            musicTensedUp = true;
+            bgMusicController.PlayTenseMusic();
+        }
+        else if (p1.health == 0 || p2.health == 0)
+        {
+            //If health is 0, game ends
             gameIsOver = true;
             int winner = (p2.health == 0) ? 1 : 2;
             EndGame(winner);

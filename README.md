@@ -11,3 +11,6 @@ The Audio Sound FX used are under the [Creative Commons license](https://creativ
 - jump.wav by [timgormly](https://freesound.org/people/timgormly/sounds/170162/)
 - dash.wav by [Yap_Audio_Production](https://freesound.org/people/Yap_Audio_Production/sounds/219005/)
 - footsteps.wav by [speedygonzo](https://freesound.org/people/speedygonzo/sounds/235718/)
+- throw.wav by [mccormick_iain](https://freesound.org/people/mccormick_iain/sounds/371115/)
+- ball-bounce.wav by [mikaelfernstrom](https://freesound.org/people/mikaelfernstrom/sounds/68650/)
+- aiming.wav by [TwoLivesLeft](https://freesound.org/people/TwoLivesLeft/sounds/352683/)

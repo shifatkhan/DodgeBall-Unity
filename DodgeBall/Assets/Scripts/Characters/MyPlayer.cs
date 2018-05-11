@@ -55,6 +55,10 @@ public class MyPlayer : MonoBehaviour
     private Animator animator;
     private SpriteRenderer render;
 
+    public MyPlayerSoundController playerSoundController;
+
+    public AudioSource footstepsSound;
+
     // Use this for initialization
     void Start()
     {
@@ -67,6 +71,20 @@ public class MyPlayer : MonoBehaviour
         maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
         minJumpVelocity = Mathf.Sqrt(2 * Mathf.Abs(gravity) * minJumpHeight);
         wallJumpDistance = new Vector2(7, 15);
+    }
+
+    private void Update()
+    {
+        if (rc.collisions.below && velocity.x != 0 && !footstepsSound.isPlaying)
+        {
+            footstepsSound.enabled = true;
+            footstepsSound.loop = true;
+        }
+        else if((!rc.collisions.below || velocity.x == 0) && footstepsSound.isPlaying)
+        {
+            footstepsSound.enabled = false;
+            footstepsSound.loop = false;
+        }
     }
 
     void FixedUpdate()
@@ -185,6 +203,7 @@ public class MyPlayer : MonoBehaviour
             isWallJumping = true;
             Invoke("ResetWallJumping", 0.2f);
             Debug.Log("Wall Jump");
+            playerSoundController.PlaySound("jump");
         }
 
         //Going down through platforms
@@ -198,6 +217,7 @@ public class MyPlayer : MonoBehaviour
             Debug.Log("Jump");
             velocity.y = maxJumpVelocity;
             isDoubleJumping = false;
+            playerSoundController.PlaySound("jump");
         }
 
         //Double jump
@@ -206,6 +226,7 @@ public class MyPlayer : MonoBehaviour
             velocity.y = maxJumpVelocity * 0.75f;
             isDoubleJumping = true;
             Debug.Log("Double jump");
+            playerSoundController.PlaySound("jump");
         }
     }
 
@@ -228,6 +249,8 @@ public class MyPlayer : MonoBehaviour
             
             //keeps direction so that you can't change direction while dashing
             Vector2 dir = new Vector2(xdir, directionalInput.y);
+
+            playerSoundController.PlaySound("dash");
 
             StartCoroutine("Dashing", dir);
         }
@@ -270,9 +293,11 @@ public class MyPlayer : MonoBehaviour
         health--;
 
         // Bounce the ball off the player appropriately
-        this.ballBounceDirection = this.ball.GetComponent<BallController>().throwDirection;
-        this.ballBounceDirection = ballBounceDirection.normalized * throwForce;
-        this.ballBounceDirection.x *= -1;
+        this.ballBounceDirection.x = this.ball.GetComponent<BallController>().throwDirection.x;
+        this.ballBounceDirection.y = this.ball.GetComponent<BallController>().throwDirection.y;
+        this.ballBounceDirection = ballBounceDirection * throwForce;
+        //this.ballBounceDirection.x *= -1;
+        Debug.Log("Bounce off at " + ballBounceDirection);
         this.ball.GetComponent<Rigidbody2D>().AddForce(ballBounceDirection);
 
         // Reset the ball's thrower ID
@@ -307,7 +332,8 @@ public class MyPlayer : MonoBehaviour
 
             // Instantiate the ball with the rotation of the Aim. The first child object is the Aim gameObject.
             GameObject clone = Instantiate(this.ballPrefab, transform.GetChild(0).position, transform.GetChild(0).rotation);
-
+            this.ballPrefab.GetComponent<BallController>().throwDirection = clone.transform.right;
+            Debug.Log("Threw ball at " + clone.transform.right);
             // Give the ball a force to simulate a throw.
             clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.right * throwForce);
         }
