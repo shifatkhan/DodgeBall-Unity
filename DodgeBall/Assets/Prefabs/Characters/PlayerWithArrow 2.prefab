@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7ab72962bc56240bb857aa803543af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimingSound: {fileID: 0}
 --- !u!114 &114310418487311396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,7 +381,7 @@ MonoBehaviour:
   ballCaught: 0
   canThrow: 0
   ballHitPushBack: 4
-  throwForce: 5500
+  throwForce: 4000
   ball: {fileID: 0}
   ballPrefab: {fileID: 1112887453788618, guid: 865cd06a5d1a27440855640332f38a1b, type: 2}
   invincible: 0

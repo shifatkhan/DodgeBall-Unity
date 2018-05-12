@@ -416,7 +416,7 @@ MonoBehaviour:
   ballCaught: 0
   canThrow: 0
   ballHitPushBack: 4
-  throwForce: 5500
+  throwForce: 4000
   ball: {fileID: 0}
   ballPrefab: {fileID: 1112887453788618, guid: 865cd06a5d1a27440855640332f38a1b, type: 2}
   invincible: 0
