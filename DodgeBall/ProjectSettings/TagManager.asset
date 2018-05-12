@@ -20,7 +20,7 @@ TagManager:
   - Arena
   - MiddleWall
   - Ball
-  - 
+  - Background
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3484792741
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
