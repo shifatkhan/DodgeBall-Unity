@@ -1,13 +1,17 @@
 fileFormatVersion: 2
-guid: 9f80c626537770642ab30e915500b94b
+guid: 928b2a042672f2a4b96de1f46d2d5be3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: idle_wBall_0
-    21300002: idle_wBall_1
-    21300004: idle_wBall_2
-    21300006: idle_wBall_3
-    21300008: idle_wBall_4
-    21300010: idle_wBall_5
+    21300000: throw_0
+    21300002: throw_1
+    21300004: throw_2
+    21300006: throw_3
+    21300008: throw_4
+    21300010: throw_5
+    21300012: throw_6
+    21300014: throw_7
+    21300016: throw_8
+    21300018: throw_9
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -88,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_wBall_0
+      name: throw_0
       rect:
         serializedVersion: 2
         x: 0
@@ -102,13 +106,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd56d8d7dd8186b43951c1c71f028967
+      spriteID: de9beac273184484da4e0afebdac7fdc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_wBall_1
+      name: throw_1
       rect:
         serializedVersion: 2
         x: 128
@@ -122,13 +126,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee309b7135d407e41b2ee92b048757a3
+      spriteID: 286c67c73a0361d498fc6e00bc87e5b5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_wBall_2
+      name: throw_2
       rect:
         serializedVersion: 2
         x: 256
@@ -142,13 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 568dd52b86778444eb5ca44c3f715b40
+      spriteID: daa6cf49ce5509c48aa3cd0ba516a10b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_wBall_3
+      name: throw_3
       rect:
         serializedVersion: 2
         x: 384
@@ -162,13 +166,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c97505e078ad53449d86c86e7d77b66
+      spriteID: 6d0d4687ba27a7641ad673d041f793d2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_wBall_4
+      name: throw_4
       rect:
         serializedVersion: 2
         x: 512
@@ -182,13 +186,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 828aec7e52f437c42a500e0afe88e531
+      spriteID: b0ea11d1330346747a7c89e4cb33d481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_wBall_5
+      name: throw_5
       rect:
         serializedVersion: 2
         x: 640
@@ -202,7 +206,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd99d4158a9ee246af9d16d2d7d9b8a
+      spriteID: 1c360ca9d26dbfb48b25a9a4709bc74a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3531041990b5343b54bf6eee731c28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05797c3b8be71ec4cbc1ac8aa6888c5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59020741f1d3d5c46b78b2f10d409970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: throw_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f4ecfcdb314014a8dc061e12ea8873
       vertices: []
       indices: 
       edges: []
@@ -210,7 +294,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9a28b1c5c8bec5b4d98d06b0896dd87e
+    spriteID: 273536d0a5c1d9b4e983e04d27c99035
     vertices: []
     indices: 
     edges: []
