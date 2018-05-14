@@ -190,6 +190,7 @@ MonoBehaviour:
   bounceSound: {fileID: 0}
   throwerId: -1
   speedBeforeReset: 4
+  playerIsCatchingTheBall: 0
 --- !u!212 &212460168917698618
 SpriteRenderer:
   m_ObjectHideFlags: 1

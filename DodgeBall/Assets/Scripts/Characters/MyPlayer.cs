@@ -235,6 +235,11 @@ public class MyPlayer : MonoBehaviour
             isDoubleJumping = true;
             Debug.Log("Double jump");
             playerSoundController.PlaySound("jump");
+
+            if (ballCaught)
+                animator.Play("jumping_wBall", -1, 0f);
+            else
+                animator.Play("jumping", -1, 0f);
         }
     }
 
@@ -323,6 +328,7 @@ public class MyPlayer : MonoBehaviour
                 break;
         }
 
+        this.ball.GetComponent<BallController>().playerIsCatchingTheBall = false;
         this.ball = null;
 
         //Become invulnerable for 2 seconds
@@ -373,9 +379,13 @@ public class MyPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ball")
         {
+            // Collided with a ball.
+
             if(collision.gameObject.GetComponent<BallController>().throwerId != this.playerID
             && collision.gameObject.GetComponent<BallController>().throwerId != -1)
             {
+                // The ball is thrown directly from the enemy.
+
                 if (invincible)
                 {
                     collision.gameObject.GetComponent<BallController>().throwerId = -1;
@@ -387,6 +397,7 @@ public class MyPlayer : MonoBehaviour
                         // Player got hit by other player.
 
                         this.ball = collision.gameObject;
+                        this.ball.GetComponent<BallController>().playerIsCatchingTheBall = true;
 
                         // Stop movement of the ball.
                         this.ball.GetComponent<Rigidbody2D>().velocity = Vector2.zero;

@@ -16,15 +16,18 @@ public class BallController : MonoBehaviour
     public int throwerId = 2;
     public float speedBeforeReset = 4f;
 
+    public bool playerIsCatchingTheBall;
+
     private void Start()
     {
         bounceSound = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
+        playerIsCatchingTheBall = false;
     }
 
     private void Update()
     {
-        if (throwerId != -1 && Mathf.Abs(rb.velocity.x) < speedBeforeReset 
+        if (!playerIsCatchingTheBall && throwerId != -1 && Mathf.Abs(rb.velocity.x) < speedBeforeReset 
             && Mathf.Abs(rb.velocity.y) < speedBeforeReset)
         {
             throwerId = -1;
@@ -34,7 +37,7 @@ public class BallController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Reset the ball's thrower id.
-        if (collision.gameObject.tag == "Arena" || collision.gameObject.tag == "Ball")
+        if (!playerIsCatchingTheBall && (collision.gameObject.tag == "Arena" || collision.gameObject.tag == "Ball"))
         {
             throwerId = -1;
             bounceSound.Play();
