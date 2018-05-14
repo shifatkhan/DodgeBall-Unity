@@ -24,7 +24,6 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Velocity: " + rb.velocity);
         if (throwerId != -1 && Mathf.Abs(rb.velocity.x) < speedBeforeReset 
             && Mathf.Abs(rb.velocity.y) < speedBeforeReset)
         {

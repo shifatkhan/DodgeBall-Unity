@@ -11,9 +11,9 @@ public class MyPlayer : MonoBehaviour
     public int health = 3;
     // Delta time in which the player must catch the ball.
     public readonly float CATCH_TIME = 0.5f;
-    // Ball Touch is when the ball initially touches the player.
+    // Ball Catching is when the ball initially touches the player.
     // Ball caught depicts whether the player is holding the ball or not.
-    public bool ballTouch = false;
+    public bool ballCatching = false;
     public bool ballCaught = false;
     public bool canThrow = false;
     public float ballHitPushBack = 4f;
@@ -48,11 +48,11 @@ public class MyPlayer : MonoBehaviour
     public int wallSlideDirection; // sliding left or right
     public float wallSlideSpeed = 2f;
     public Vector2 wallJumpDistance;
-
+    
     public Vector2 directionalInput;
 
     private MyController2D rc;
-    private Animator animator;
+    public Animator animator;
     private SpriteRenderer render;
 
     public MyPlayerSoundController playerSoundController;
@@ -79,17 +79,19 @@ public class MyPlayer : MonoBehaviour
         {
             footstepsSound.enabled = true;
             footstepsSound.loop = true;
+            animator.SetBool("running", true);
         }
         else if((!rc.collisions.below || velocity.x == 0) && footstepsSound.isPlaying)
         {
             footstepsSound.enabled = false;
             footstepsSound.loop = false;
+            animator.SetBool("running", false);
         }
     }
 
     void FixedUpdate()
     {
-        if (!ballTouch)
+        if (!ballCatching)
         {
             CalculateVelocity();
         }
@@ -149,9 +151,13 @@ public class MyPlayer : MonoBehaviour
     {
         wallSlideDirection = (rc.collisions.left) ? -1 : 1;
         isWallSliding = false;
+        animator.SetBool("wallSliding", isWallSliding);
+
         if ((rc.collisions.left || rc.collisions.right) && !rc.collisions.below && velocity.y < 0 && directionalInput.x == wallSlideDirection)
         {
             isWallSliding = true;
+            animator.SetBool("wallSliding", isWallSliding);
+
             isDoubleJumping = false;
             //slows down descent when sliding on wall
             if (velocity.y < -wallSlideSpeed)
@@ -169,12 +175,14 @@ public class MyPlayer : MonoBehaviour
         {
             //animator.SetBool("grounded", true);
             isDoubleJumping = false;
+            animator.SetBool("jumping", false);
         }
         else
         {
             //animator.SetBool("grounded", false);
             //If in any situation where player isn't grounded, then he is not standing in a platform;
             rc.collisions.standingOnPlatform = false;
+            animator.SetBool("jumping", true);
         }
     }
 
@@ -276,12 +284,14 @@ public class MyPlayer : MonoBehaviour
 
     private void DetermineIfBallNotCaught()
     {
-        if (!ballCaught && ballTouch)
+        if (!ballCaught && ballCatching)
         {
+            animator.Play("hit");
             ReceiveDamage();
         }
 
-        this.ballTouch = false;
+        this.ballCatching = false;
+        animator.SetBool("catching", ballCatching);
     }
 
     public void ReceiveDamage()
@@ -317,12 +327,13 @@ public class MyPlayer : MonoBehaviour
 
         //Become invulnerable for 2 seconds
         invincible = true;
+        
         Invoke("ResetInvincible", invulnerableTime);
     }
 
     public void throwBall()
     {
-        if (ballCaught && !ballTouch)
+        if (ballCaught && !ballCatching)
         {
            
             this.ballPrefab.GetComponent<BallController>().throwerId = this.playerID;
@@ -335,7 +346,12 @@ public class MyPlayer : MonoBehaviour
 
             // Give the ball a force to simulate a throw.
             clone.GetComponent<Rigidbody2D>().AddForce(clone.transform.right * throwForce);
+            
+            canThrow = false;
+            ballCaught = false;
+            animator.SetBool("ballCaught", ballCaught);
 
+            animator.Play("throwing");
             playerSoundController.PlaySound("throw");
         }
     }
@@ -343,8 +359,13 @@ public class MyPlayer : MonoBehaviour
     public void CatchTheBall()
     {
         Destroy(this.ball);
+
         ballCaught = true;
-        ballTouch = false;
+        animator.SetBool("ballCaught", ballCaught);
+        animator.Play("catching");
+
+        ballCatching = false;
+        animator.SetBool("catching", ballCatching);
         playerSoundController.PlaySound("catch");
     }
 
@@ -359,7 +380,7 @@ public class MyPlayer : MonoBehaviour
                 {
                     collision.gameObject.GetComponent<BallController>().throwerId = -1;
                 }
-                else if (!invincible && !ballTouch)
+                else if (!invincible && !ballCatching)
                 {
                     if (!ballCaught)
                     {
@@ -374,7 +395,9 @@ public class MyPlayer : MonoBehaviour
                         this.velocity = Vector2.zero;
                         SetDirectionalInput(Vector2.zero);
 
-                        this.ballTouch = true;
+                        this.ballCatching = true;
+                        animator.SetBool("catching", ballCatching);
+                        animator.Play("catching");
                         Invoke("DetermineIfBallNotCaught", CATCH_TIME);
                     }
                     else
@@ -390,13 +413,13 @@ public class MyPlayer : MonoBehaviour
                         this.velocity = Vector2.zero;
                         SetDirectionalInput(Vector2.zero);
 
-
+                        animator.Play("hit_wBall");
                         ReceiveDamage();
                     }
 
                 }
             }
-            else if (collision.gameObject.GetComponent<BallController>().throwerId == -1 && !ballCaught && !ballTouch)
+            else if (collision.gameObject.GetComponent<BallController>().throwerId == -1 && !ballCaught && !ballCatching)
             {
                 this.ball = collision.gameObject;
                 CatchTheBall();

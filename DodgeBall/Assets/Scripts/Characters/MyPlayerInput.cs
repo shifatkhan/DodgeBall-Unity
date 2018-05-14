@@ -20,7 +20,7 @@ public class MyPlayerInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!player.ballTouch) {
+        if (!player.ballCatching) {
 
             if (player.playerID == 1) {
                 //Move
@@ -67,62 +67,68 @@ public class MyPlayerInput : MonoBehaviour {
         if (player.PlayerID == 1)
         {
             // Catch the ball.
-            if (Input.GetButtonDown("ThrowCatch_P1") && player.ballTouch)
+            if (Input.GetButtonDown("ThrowCatch_P1") && player.ballCatching)
             {
                 Debug.Log("Player 1 caught the ball");
                 player.CatchTheBall();
             }
 
             // Aim the ball.
-            if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballTouch && player.canThrow)
+            if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballCatching && player.canThrow)
             {
                 aimController.MakeSpriteVisible(true);
                 aimController.aiming = true;
+
+                player.animator.SetBool("aiming", aimController.aiming);
+                player.animator.Play("aiming");
             }
 
             // Throw the ball at the aimed direction.
-            if (Input.GetButtonUp("ThrowCatch_P1") && player.ballCaught && !player.ballTouch)
+            if (Input.GetButtonUp("ThrowCatch_P1") && player.ballCaught && !player.ballCatching)
             {
                 player.canThrow = true;
 
                 if (aimController.aiming)
                 {
                     player.throwBall();
-                    player.ballCaught = false;
+                    
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);
-                    player.canThrow = false;
+                    player.animator.SetBool("aiming", aimController.aiming);
                 }
             }
         }
         else if(player.PlayerID == 2)
         {
             // Catch the ball.
-            if (Input.GetButtonDown("ThrowCatch_P2") && player.ballTouch)
+            if (Input.GetButtonDown("ThrowCatch_P2") && player.ballCatching)
             {
                 Debug.Log("Player 2 caught the ball");
                 player.CatchTheBall();
             }
 
             // Aim the ball.
-            if (Input.GetButton("ThrowCatch_P2") && player.ballCaught && !player.ballTouch && player.canThrow)
+            if (Input.GetButton("ThrowCatch_P2") && player.ballCaught && !player.ballCatching && player.canThrow)
             {
                 aimController.MakeSpriteVisible(true);
                 aimController.aiming = true;
+
+                player.animator.SetBool("aiming", aimController.aiming);
+                player.animator.Play("aiming");
             }
 
             // Throw the ball at the aimed direction.
-            if (Input.GetButtonUp("ThrowCatch_P2") && player.ballCaught && !player.ballTouch)
+            if (Input.GetButtonUp("ThrowCatch_P2") && player.ballCaught && !player.ballCatching)
             {
                 player.canThrow = true;
 
                 if (aimController.aiming)
                 {
                     player.throwBall();
-                    player.ballCaught = false;
+
                     aimController.aiming = false;
                     aimController.MakeSpriteVisible(false);
-                    player.canThrow = false;
+                    player.animator.SetBool("aiming", aimController.aiming);
                 }
             }
         }

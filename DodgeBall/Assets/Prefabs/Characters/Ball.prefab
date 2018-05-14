@@ -87,7 +87,8 @@ AudioSource:
   m_GameObject: {fileID: 1112887453788618}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1bbd352f0c4f5b141b3e40ea2412460b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 81da5f492f1eec54d83ee730c685b761, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -188,6 +189,7 @@ MonoBehaviour:
   throwDirection: {x: -0.8526412, y: 0.52249736}
   bounceSound: {fileID: 0}
   throwerId: -1
+  speedBeforeReset: 4
 --- !u!212 &212460168917698618
 SpriteRenderer:
   m_ObjectHideFlags: 1

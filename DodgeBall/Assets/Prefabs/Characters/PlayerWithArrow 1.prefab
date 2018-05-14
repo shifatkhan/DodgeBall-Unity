@@ -141,7 +141,8 @@ AudioSource:
   m_GameObject: {fileID: 1296617906921506}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1bbd352f0c4f5b141b3e40ea2412460b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -236,7 +237,8 @@ AudioSource:
   m_GameObject: {fileID: 1296617906921506}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 1bbd352f0c4f5b141b3e40ea2412460b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 9e92ccf6d55a97b4588337365fbae490, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -332,7 +334,7 @@ Animator:
   m_GameObject: {fileID: 1296617906921506}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 046dd4b01cc01f34ba197689171e557e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 70daa266949bddf439453285d5dbb622, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -412,7 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerID: 1
   health: 3
-  ballTouch: 0
+  ballCatching: 0
   ballCaught: 0
   canThrow: 0
   ballHitPushBack: 4
@@ -437,6 +439,7 @@ MonoBehaviour:
   wallSlideSpeed: 2
   wallJumpDistance: {x: 0, y: 0}
   directionalInput: {x: 0, y: 0}
+  animator: {fileID: 0}
   playerSoundController: {fileID: 0}
   footstepsSound: {fileID: 82348176074845220}
 --- !u!212 &212213168864476908
