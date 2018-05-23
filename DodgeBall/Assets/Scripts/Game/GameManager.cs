@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
@@ -20,6 +21,11 @@ public class GameManager : MonoBehaviour {
     private bool gameIsOver;
 
     private bool musicTensedUp;
+
+    void Awake()
+    {
+        SceneManager.sceneUnloaded += UnPauseGame;
+    }
 
     // Use this for initialization
     void Start () {
@@ -88,5 +94,15 @@ public class GameManager : MonoBehaviour {
 
         //Send winning info
         gameoverScript.gameObject.GetComponent<GameOverManager>().ShowGameOverInfo(winner);
+    }
+
+    /// <summary>
+    /// Un-freeze the game so the other scenes are not frozen.
+    /// </summary>
+    /// <typeparam name="Scene"></typeparam>
+    /// <param name="scene"></param>
+    void UnPauseGame<Scene> (Scene scene)
+    {
+        Time.timeScale = 1f;
     }
 }
