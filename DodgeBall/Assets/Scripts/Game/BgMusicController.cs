@@ -109,7 +109,7 @@ public class BgMusicController : MonoBehaviour {
 	/// <param name="scene">Scene.</param>
 	/// <param name="mode">Mode.</param>
 	void OnSceneChange(Scene scene, LoadSceneMode mode) {
-		if (scene.name.Equals ("WilliamScene")) {
+		if (scene.name.Equals ("ShifatScene")) {
 			if (titleIntro.isPlaying) {
                 // Play the gameLoop after the intro finishes.
 				gameLoop.PlayScheduled (AudioSettings.dspTime + (titleIntro.clip.length - titleIntro.time) - 0.03f);
