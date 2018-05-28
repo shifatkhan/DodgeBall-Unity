@@ -102,10 +102,10 @@ TextureImporter:
       name: got_hit_wBall_0
       rect:
         serializedVersion: 2
-        x: 69
+        x: 0
         y: 0
-        width: 48
-        height: 84
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,7 +113,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0991d5607c4ebfd44af5e5671030cb32
+      spriteID: 0b02e165e3f37e040814116834349b7a
       vertices: []
       indices: 
       edges: []
@@ -122,10 +122,10 @@ TextureImporter:
       name: got_hit_wBall_1
       rect:
         serializedVersion: 2
-        x: 139
+        x: 128
         y: 0
-        width: 82
-        height: 95
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +133,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29c24568427d27744b1212b075942ad1
+      spriteID: 00509a825723de44face48ae7ed4bcb2
       vertices: []
       indices: 
       edges: []
@@ -142,10 +142,10 @@ TextureImporter:
       name: got_hit_wBall_2
       rect:
         serializedVersion: 2
-        x: 265
+        x: 256
         y: 0
-        width: 84
-        height: 98
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,7 +153,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d31eae88c7022043b1f2126bbe0f6be
+      spriteID: 61fd18873ecb2ab49ae9e09ea39cc624
       vertices: []
       indices: 
       edges: []
@@ -164,8 +164,8 @@ TextureImporter:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 94
-        height: 90
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79c994deb1f865947ad01146fdcd3c2b
+      spriteID: 8b30adf74dc1e0a48a77596812c9647b
       vertices: []
       indices: 
       edges: []
@@ -182,10 +182,10 @@ TextureImporter:
       name: got_hit_wBall_4
       rect:
         serializedVersion: 2
-        x: 520
+        x: 512
         y: 0
-        width: 106
-        height: 89
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e15b7d99d23c974f86eda348a31000f
+      spriteID: ea1a3667d56b91d41a84356ba931dc6c
       vertices: []
       indices: 
       edges: []
@@ -202,10 +202,10 @@ TextureImporter:
       name: got_hit_wBall_5
       rect:
         serializedVersion: 2
-        x: 688
+        x: 640
         y: 0
-        width: 68
-        height: 48
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fa6cfafd92276143ad472f26dc9500f
+      spriteID: 102b8b8cc147eff4eaaf235e893e21d2
       vertices: []
       indices: 
       edges: []

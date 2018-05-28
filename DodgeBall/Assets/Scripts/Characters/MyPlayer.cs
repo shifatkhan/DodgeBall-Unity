@@ -41,7 +41,7 @@ public class MyPlayer : MonoBehaviour
 
     public bool isDashing;
     public float dashDistance = 21f;
-    public float timeToReachDashVelocity = .075f;
+    public float timeToReachDashVelocity = .05f;
 
     public bool isWallSliding;
     public bool isWallJumping;
@@ -75,13 +75,13 @@ public class MyPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (rc.collisions.below && velocity.x != 0 && !footstepsSound.isPlaying)
+        if (rc.collisions.below && Mathf.Abs(velocity.x) > 0.5f && !footstepsSound.isPlaying)
         {
             footstepsSound.enabled = true;
             footstepsSound.loop = true;
             animator.SetBool("running", true);
         }
-        else if((!rc.collisions.below || velocity.x == 0) && footstepsSound.isPlaying)
+        else if((!rc.collisions.below || Mathf.Abs(velocity.x) < 0.5f) && footstepsSound.isPlaying)
         {
             footstepsSound.enabled = false;
             footstepsSound.loop = false;
@@ -107,6 +107,7 @@ public class MyPlayer : MonoBehaviour
         float targetVelocityX = directionalInput.x * moveSpeed;
         velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (rc.collisions.below ? accelerationTimeGrounded : accelerationTimeAirborne));
         velocity.y += gravity * Time.deltaTime;
+
 
         if (Mathf.Abs(velocity.x) < 0.1)
         {
@@ -157,7 +158,16 @@ public class MyPlayer : MonoBehaviour
         {
             isWallSliding = true;
             animator.SetBool("wallSliding", isWallSliding);
+            
+            if (ballCaught)
+            {
+                animator.Play("wallSliding_wBall");
 
+            }
+            else
+            {
+                animator.Play("wallSliding");
+            }
             isDoubleJumping = false;
             //slows down descent when sliding on wall
             if (velocity.y < -wallSlideSpeed)
@@ -171,11 +181,17 @@ public class MyPlayer : MonoBehaviour
     private void CheckGrounded()
     {
         //When landing, reset double jump
-        if (rc.collisions.below)
+        if (rc.collisions.below || isWallSliding)
         {
             //animator.SetBool("grounded", true);
             isDoubleJumping = false;
             animator.SetBool("jumping", false);
+            animator.SetBool("falling", false);
+        }
+        else if (!rc.collisions.below && velocity.y < 0)
+        {
+            animator.SetBool("jumping", false);
+            animator.SetBool("falling", true);
         }
         else
         {
@@ -183,6 +199,7 @@ public class MyPlayer : MonoBehaviour
             //If in any situation where player isn't grounded, then he is not standing in a platform;
             rc.collisions.standingOnPlatform = false;
             animator.SetBool("jumping", true);
+            animator.SetBool("falling", false);
         }
     }
 
@@ -291,7 +308,7 @@ public class MyPlayer : MonoBehaviour
     {
         if (!ballCaught && ballCatching)
         {
-            animator.Play("hit");
+            
             ReceiveDamage();
         }
 
@@ -335,6 +352,25 @@ public class MyPlayer : MonoBehaviour
         invincible = true;
         
         Invoke("ResetInvincible", invulnerableTime);
+
+        //Play animation of getting hit
+        if (health > 0)
+        {
+            if (ballCaught)
+            {
+                animator.Play("hit_wBall");
+            }
+            else
+            {
+                animator.Play("hit");
+            }
+        }
+        else
+        {
+            animator.Play("death");
+        }
+
+        
     }
 
     public void throwBall()
@@ -471,18 +507,76 @@ public class MyPlayer : MonoBehaviour
      */
     IEnumerator Dashing(Vector2 direction)
     {
+        float targetX = (dashDistance * direction.x) / timeToReachDashVelocity;
+        float targetY = (dashDistance * direction.y) / timeToReachDashVelocity;
+
+        if(Mathf.Abs(direction.x) > 0 && Mathf.Abs(direction.y) > 0)
+        {
+            targetX /= 1.50f;
+            targetY /= 1.25f;
+        }
+
         isDashing = true;
         float timer = 0; //Timer to check duration of dash
-
-        while(0.1f > timer) //how long to dash for i.e dashing for 0.1 sec
+        
+        PlayDashingAnimation(direction);
+        while (0.2f > timer) //how long to dash for i.e dashing for 0.1 sec
         {
+           
             timer += Time.deltaTime;
-            velocity.x = (dashDistance * direction.x) / timeToReachDashVelocity;
-            velocity.y = (dashDistance * direction.y) / timeToReachDashVelocity;
+            velocity.x = targetX;
+            velocity.y = targetY;
             yield return 0; //go to next frame
         }
+        
 
         yield return new WaitForSeconds(1f); //cooldown for dashing
         isDashing = false;
+    }
+
+    private void PlayDashingAnimation(Vector2 direction)
+    {
+        string wBall = "";
+
+        if (ballCaught)
+        {
+            wBall = "_wBall";
+        }
+        //Dash Straight up
+        if(direction.x == 0 && direction.y > 0)
+        {
+            animator.Play("dash_up" + wBall);
+        }
+
+        //Dash diagonal up
+        else if(direction.x != 0 && direction.y > 0)
+        {
+            animator.Play("dash_diag_up" + wBall);
+        }
+
+        //Dash diagonal down
+        else if (direction.x != 0 && direction.y < 0 && !rc.collisions.below)
+        {
+            animator.Play("dash_diag_down" + wBall);
+        }
+
+        //Straight down
+        else if (direction.x == 0 && direction.y < 0 && !rc.collisions.below)
+        {
+            animator.Play("dash_down" + wBall);
+        }
+
+        //Dash straight ahead
+        else if (direction.x != 0 && direction.y == 0)
+        {
+            if (rc.collisions.below)
+            {
+                animator.Play("dash_ground" + wBall);
+            }
+            else
+            {
+                animator.Play("dash_air" + wBall);
+            }
+        }
     }
 }

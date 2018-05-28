@@ -20,7 +20,7 @@ public class MyPlayerInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!player.ballCatching) {
+        if (!player.ballCatching && player.health > 0) {
 
             if (player.playerID == 1) {
                 //Move

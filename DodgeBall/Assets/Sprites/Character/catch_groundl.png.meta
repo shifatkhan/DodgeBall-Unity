@@ -104,10 +104,10 @@ TextureImporter:
       name: catch_groundl_0
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 0
-        width: 47
-        height: 84
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,7 +115,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab5562b11a80365409104721568e8b71
+      spriteID: b025254d248e68e40b7930a1d5129bef
       vertices: []
       indices: 
       edges: []
@@ -124,10 +124,10 @@ TextureImporter:
       name: catch_groundl_1
       rect:
         serializedVersion: 2
-        x: 176
+        x: 128
         y: 0
-        width: 80
-        height: 85
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,7 +135,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8463ae5d2786f1245bd0a4e611d87b60
+      spriteID: 6b2f5786c66d992498511bef9c381134
       vertices: []
       indices: 
       edges: []
@@ -144,10 +144,10 @@ TextureImporter:
       name: catch_groundl_2
       rect:
         serializedVersion: 2
-        x: 272
+        x: 256
         y: 0
-        width: 77
-        height: 80
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,7 +155,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b655a857d00f58544837a72227f8032e
+      spriteID: d1d0f27315dc8d64cb79e65383f5c457
       vertices: []
       indices: 
       edges: []
@@ -164,10 +164,10 @@ TextureImporter:
       name: catch_groundl_3
       rect:
         serializedVersion: 2
-        x: 395
+        x: 384
         y: 0
-        width: 82
-        height: 80
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1fa13f27202aa4093c2ff59bef9d96
+      spriteID: 1c734dcb485399c4d8ff951c53c02beb
       vertices: []
       indices: 
       edges: []
@@ -184,10 +184,10 @@ TextureImporter:
       name: catch_groundl_4
       rect:
         serializedVersion: 2
-        x: 525
+        x: 512
         y: 0
-        width: 81
-        height: 83
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,7 +195,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65f72574ae574cc46b1fcc29fb97bbbb
+      spriteID: 375be07966adc47478167e8df838d059
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: catch_groundl_5
       rect:
         serializedVersion: 2
-        x: 657
+        x: 640
         y: 0
-        width: 96
-        height: 89
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,7 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b1e65371286ccd4d837cad17eb9ff44
+      spriteID: a612930229fac694b8750f2f5367cac7
       vertices: []
       indices: 
       edges: []
@@ -224,10 +224,10 @@ TextureImporter:
       name: catch_groundl_6
       rect:
         serializedVersion: 2
-        x: 816
+        x: 768
         y: 0
-        width: 68
-        height: 48
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23ea3377b44b37429c4fd6393ee5fbd
+      spriteID: 062623ce57670d149a0615fb00f16a47
       vertices: []
       indices: 
       edges: []
@@ -244,10 +244,10 @@ TextureImporter:
       name: catch_groundl_7
       rect:
         serializedVersion: 2
-        x: 944
+        x: 896
         y: 0
-        width: 48
-        height: 84
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,7 +255,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2bc9e4f68bd0ef4fb571ef0742e2242
+      spriteID: 14ac5108e02bf3248a00c0817a6777cf
       vertices: []
       indices: 
       edges: []

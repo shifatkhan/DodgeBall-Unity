@@ -82,18 +82,30 @@ public class GameManager : MonoBehaviour {
             //If health is 0, game ends
             gameIsOver = true;
             int winner = (p2.health == 0) ? 1 : 2;
-            EndGame(winner);
+            StartCoroutine(FinishGame(winner));
         }
     }
 
     private void EndGame(int winner)
     {
         //end game
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         gameoverScreen.SetActive(true);
 
         //Send winning info
         gameoverScript.gameObject.GetComponent<GameOverManager>().ShowGameOverInfo(winner);
+    }
+
+    IEnumerator FinishGame(int winner)
+    {
+        yield return new WaitForSeconds(2f);
+
+        Time.timeScale = 0f;
+
+        gameoverScreen.SetActive(true);
+        gameoverScript.gameObject.GetComponent<GameOverManager>().ShowGameOverInfo(winner);
+
+        yield return 0;
     }
 
     /// <summary>
