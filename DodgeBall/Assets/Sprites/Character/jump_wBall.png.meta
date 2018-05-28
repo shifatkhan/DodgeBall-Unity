@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0da6e31425803b04fb9005f396940224
+guid: d707bb187fc0e7a4fb8de58e088834d7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dash_0
-    21300002: dash_1
-    21300004: dash_2
-    21300006: dash_3
-    21300008: dash_4
-    21300010: dash_5
+    21300000: jump_wBall_0
+    21300002: jump_wBall_1
+    21300004: jump_wBall_2
+    21300006: jump_wBall_3
+    21300008: jump_wBall_4
+    21300010: jump_wBall_5
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dash_0
+      name: jump_wBall_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 13
-        width: 37
-        height: 97
+        x: 48
+        y: 0
+        width: 48
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a552bffbcafdbd46a89a695da9c9388
+      spriteID: 493620031be82664b8e7d5cf9b04a9aa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_1
+      name: jump_wBall_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 27
-        width: 72
-        height: 72
+        x: 176
+        y: 0
+        width: 45
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30958d7f84b85064d8d0b55fd53528f6
+      spriteID: 74805f7abe839114587fab41b4e38f36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_2
+      name: jump_wBall_2
       rect:
         serializedVersion: 2
-        x: 314
-        y: 6
+        x: 318
+        y: 12
         width: 34
-        height: 119
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,19 +153,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6e48528331f05a45854db7955189d83
+      spriteID: c97a92344f71ab1429b11c51143eaabd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_3
+      name: jump_wBall_3
       rect:
         serializedVersion: 2
-        x: 406
-        y: 14
-        width: 74
-        height: 90
+        x: 446
+        y: 15
+        width: 40
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56db4df4103f6b946b5ee621f8ef83cc
+      spriteID: 9d4251e2616e72447ba1919370b6288b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_4
+      name: jump_wBall_4
       rect:
         serializedVersion: 2
-        x: 521
-        y: 52
-        width: 84
-        height: 43
+        x: 576
+        y: 17
+        width: 27
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,19 +193,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d93ace5e251cb404b8f096bf916abab0
+      spriteID: 0c7120aefffafd04aa795e49cb4c8705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_5
+      name: jump_wBall_5
       rect:
         serializedVersion: 2
-        x: 649
-        y: 52
-        width: 101
-        height: 43
+        x: 702
+        y: 8
+        width: 38
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87b3f3494b04fd943b37112c8f7915ce
+      spriteID: b4ca4789a7455b3488cbf9c9b9954f0e
       vertices: []
       indices: 
       edges: []
@@ -221,7 +221,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 27836fc376b309b439547401449ee2d8
+    spriteID: 2ac048eccad230c4ea2497fdd5c27a73
     vertices: []
     indices: 
     edges: []

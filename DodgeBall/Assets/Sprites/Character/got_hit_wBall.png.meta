@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0da6e31425803b04fb9005f396940224
+guid: 193085aa10014c842ab2fb142eeefa62
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dash_0
-    21300002: dash_1
-    21300004: dash_2
-    21300006: dash_3
-    21300008: dash_4
-    21300010: dash_5
+    21300000: got_hit_wBall_0
+    21300002: got_hit_wBall_1
+    21300004: got_hit_wBall_2
+    21300006: got_hit_wBall_3
+    21300008: got_hit_wBall_4
+    21300010: got_hit_wBall_5
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -99,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dash_0
+      name: got_hit_wBall_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 13
-        width: 37
-        height: 97
+        x: 69
+        y: 0
+        width: 48
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,19 +113,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a552bffbcafdbd46a89a695da9c9388
+      spriteID: 0991d5607c4ebfd44af5e5671030cb32
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_1
+      name: got_hit_wBall_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 27
-        width: 72
-        height: 72
+        x: 139
+        y: 0
+        width: 82
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30958d7f84b85064d8d0b55fd53528f6
+      spriteID: 29c24568427d27744b1212b075942ad1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_2
+      name: got_hit_wBall_2
       rect:
         serializedVersion: 2
-        x: 314
-        y: 6
-        width: 34
-        height: 119
+        x: 265
+        y: 0
+        width: 84
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,18 +153,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6e48528331f05a45854db7955189d83
+      spriteID: 8d31eae88c7022043b1f2126bbe0f6be
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_3
+      name: got_hit_wBall_3
       rect:
         serializedVersion: 2
-        x: 406
-        y: 14
-        width: 74
+        x: 384
+        y: 0
+        width: 94
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56db4df4103f6b946b5ee621f8ef83cc
+      spriteID: 79c994deb1f865947ad01146fdcd3c2b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_4
+      name: got_hit_wBall_4
       rect:
         serializedVersion: 2
-        x: 521
-        y: 52
-        width: 84
-        height: 43
+        x: 520
+        y: 0
+        width: 106
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,19 +193,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d93ace5e251cb404b8f096bf916abab0
+      spriteID: 1e15b7d99d23c974f86eda348a31000f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dash_5
+      name: got_hit_wBall_5
       rect:
         serializedVersion: 2
-        x: 649
-        y: 52
-        width: 101
-        height: 43
+        x: 688
+        y: 0
+        width: 68
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87b3f3494b04fd943b37112c8f7915ce
+      spriteID: 3fa6cfafd92276143ad472f26dc9500f
       vertices: []
       indices: 
       edges: []
@@ -221,7 +221,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 27836fc376b309b439547401449ee2d8
+    spriteID: 1b07d7bf45395884db4c29c59def5ed6
     vertices: []
     indices: 
     edges: []
