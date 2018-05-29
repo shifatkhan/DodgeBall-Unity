@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void PlayGame()
     {
+        Debug.Log("Play from MainMenu.cs");
         SceneManager.LoadScene("ShifatScene");
     }
 
