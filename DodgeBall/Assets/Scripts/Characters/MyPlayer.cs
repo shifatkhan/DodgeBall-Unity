@@ -51,7 +51,7 @@ public class MyPlayer : MonoBehaviour
     
     public Vector2 directionalInput;
 
-    private MyController2D rc;
+    public MyController2D rc;
     public Animator animator;
     private SpriteRenderer render;
 
@@ -154,7 +154,7 @@ public class MyPlayer : MonoBehaviour
         isWallSliding = false;
         animator.SetBool("wallSliding", isWallSliding);
 
-        if ((rc.collisions.left || rc.collisions.right) && !rc.collisions.below && velocity.y < 0 && directionalInput.x == wallSlideDirection)
+        if ((rc.collisions.left || rc.collisions.right) && !rc.collisions.below && velocity.y < 0 && directionalInput.x == wallSlideDirection && !GetComponent<MyPlayerInput>().aimController.aiming)
         {
             isWallSliding = true;
             animator.SetBool("wallSliding", isWallSliding);

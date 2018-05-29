@@ -7,7 +7,7 @@ public class MyPlayerInput : MonoBehaviour {
 
 	private MyPlayer player;
 	private Vector2 input;
-    private AimController aimController;
+    public AimController aimController;
 
     public AudioSource aimingSound;
 
@@ -20,7 +20,18 @@ public class MyPlayerInput : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (!player.ballCatching && player.health > 0) {
+
+        // MOVEMENTS
+        if (aimController.aiming)
+        {
+            if (player.rc.collisions.below)
+            {
+                // Stop movement of the player if aiming the ball.
+                player.velocity = Vector2.zero;
+                player.SetDirectionalInput(Vector2.zero);
+            }
+        }
+        else if (!player.ballCatching && player.health > 0) {
 
             if (player.playerID == 1) {
                 //Move
@@ -64,6 +75,8 @@ public class MyPlayerInput : MonoBehaviour {
                 }
             }
         }
+
+        // BALL INTERACTION
         if (player.PlayerID == 1)
         {
             // Catch the ball.
