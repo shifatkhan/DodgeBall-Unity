@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour {
 
     private bool gameIsPaused;
     private bool gameIsOver;
+    private bool pauseDisabled;
 
     private bool musicTensedUp;
 
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour {
         Time.timeScale = 1f;
         gameIsOver = false;
         gameIsPaused = false;
+        pauseDisabled = false;
         musicTensedUp = false;
         bgMusicController = GameObject.Find("BGMusic").GetComponent<BgMusicController>();
         bgMusicController.PlayGameMusic();
@@ -51,7 +53,7 @@ public class GameManager : MonoBehaviour {
     private void CheckForPause()
     {
         //Fixes thing where user can still bring up pause screen on gameover screen
-        if (!gameIsOver)
+        if (!pauseDisabled)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -80,7 +82,7 @@ public class GameManager : MonoBehaviour {
         else if (p1.health == 0 || p2.health == 0)
         {
             //If health is 0, game ends
-            gameIsOver = true;
+            pauseDisabled = true;
             int winner = (p2.health == 0) ? 1 : 2;
             StartCoroutine(FinishGame(winner));
         }
@@ -100,11 +102,15 @@ public class GameManager : MonoBehaviour {
     {
         yield return new WaitForSeconds(2f);
 
-        Time.timeScale = 0f;
+        if (!gameIsOver)
+        {
+            Time.timeScale = 0f;
 
-        gameoverScreen.SetActive(true);
-        gameoverScript.gameObject.GetComponent<GameOverManager>().ShowGameOverInfo(winner);
-
+            gameoverScreen.SetActive(true);
+            gameoverScript.gameObject.GetComponent<GameOverManager>().ShowGameOverInfo(winner);
+            gameIsOver = true;
+        }
+        
         yield return 0;
     }
 

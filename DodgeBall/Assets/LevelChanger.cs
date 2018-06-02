@@ -19,7 +19,7 @@ public class LevelChanger : MonoBehaviour {
 
     public void StartLoad()
     {
-        Debug.Log("Play from LevelChanger.cs");
+        Time.timeScale = 1f;
         StartCoroutine(LoadScene());
     }
 
