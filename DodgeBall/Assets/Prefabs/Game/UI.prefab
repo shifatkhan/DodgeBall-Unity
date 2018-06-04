@@ -1748,8 +1748,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114936567460550910}
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 0}
+        m_MethodName: StartLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1862,8 +1862,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114764116361283000}
-        m_MethodName: GoToMainMenu
+      - m_Target: {fileID: 0}
+        m_MethodName: StartLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4214,6 +4214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameIsPaused: 0
   pauseUI: {fileID: 1100715629385046}
+  optionsUI: {fileID: 1888625610984216}
 --- !u!114 &114936603871085900
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -8,6 +8,7 @@ public class PauseManager : MonoBehaviour {
     public bool gameIsPaused;
 
     public GameObject pauseUI;
+    public GameObject optionsUI;
 
     void Start()
     {
@@ -20,6 +21,12 @@ public class PauseManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
+    }
+
+    public void CloseOptionsMenu()
+    {
+        optionsUI.SetActive(false);
+        pauseUI.SetActive(true);
     }
 
     public void PauseGame()

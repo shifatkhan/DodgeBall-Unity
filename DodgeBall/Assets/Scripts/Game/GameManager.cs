@@ -16,8 +16,7 @@ public class GameManager : MonoBehaviour {
     public GameObject gameoverScreen;
 
     private BgMusicController bgMusicController;
-
-    private bool gameIsPaused;
+    
     private bool gameIsOver;
     private bool pauseDisabled;
 
@@ -32,7 +31,6 @@ public class GameManager : MonoBehaviour {
     void Start () {
         Time.timeScale = 1f;
         gameIsOver = false;
-        gameIsPaused = false;
         pauseDisabled = false;
         musicTensedUp = false;
         bgMusicController = GameObject.Find("BGMusic").GetComponent<BgMusicController>();
@@ -57,13 +55,20 @@ public class GameManager : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (!gameIsPaused)
+                if (!pauseScript.GetComponent<PauseManager>().gameIsPaused)
                 {
                     pauseScript.GetComponent<PauseManager>().PauseGame();
                 }
                 else
                 {
-                    pauseScript.GetComponent<PauseManager>().ResumeGame();
+                    if (pauseScript.GetComponent<PauseManager>().optionsUI.activeSelf)
+                    {
+                        pauseScript.GetComponent<PauseManager>().CloseOptionsMenu();
+                    }
+                    else
+                    {
+                        pauseScript.GetComponent<PauseManager>().ResumeGame();
+                    }
                 }
             }
         }
