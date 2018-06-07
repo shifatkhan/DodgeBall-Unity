@@ -10,7 +10,7 @@ public class MyPlayer : MonoBehaviour
     public int playerID = 1;
     public int health = 3;
     // Delta time in which the player must catch the ball.
-    public readonly float CATCH_TIME = 0.5f;
+    public readonly float CATCH_TIME = 0.25f;
     // Ball Catching is when the ball initially touches the player.
     // Ball caught depicts whether the player is holding the ball or not.
     public bool ballCatching = false;
