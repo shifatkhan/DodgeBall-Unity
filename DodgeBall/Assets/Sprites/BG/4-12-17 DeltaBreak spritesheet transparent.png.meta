@@ -1,0 +1,2101 @@
+fileFormatVersion: 2
+guid: e8157217a9b4b234a97733198f1bfbdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 4-12-17 DeltaBreak spritesheet transparent_0
+    21300002: 4-12-17 DeltaBreak spritesheet transparent_1
+    21300004: 4-12-17 DeltaBreak spritesheet transparent_2
+    21300006: 4-12-17 DeltaBreak spritesheet transparent_3
+    21300008: 4-12-17 DeltaBreak spritesheet transparent_4
+    21300010: 4-12-17 DeltaBreak spritesheet transparent_5
+    21300012: 4-12-17 DeltaBreak spritesheet transparent_6
+    21300014: 4-12-17 DeltaBreak spritesheet transparent_7
+    21300016: 4-12-17 DeltaBreak spritesheet transparent_8
+    21300018: 4-12-17 DeltaBreak spritesheet transparent_9
+    21300020: 4-12-17 DeltaBreak spritesheet transparent_10
+    21300022: 4-12-17 DeltaBreak spritesheet transparent_11
+    21300024: 4-12-17 DeltaBreak spritesheet transparent_12
+    21300026: 4-12-17 DeltaBreak spritesheet transparent_13
+    21300028: 4-12-17 DeltaBreak spritesheet transparent_14
+    21300030: 4-12-17 DeltaBreak spritesheet transparent_15
+    21300032: 4-12-17 DeltaBreak spritesheet transparent_16
+    21300034: 4-12-17 DeltaBreak spritesheet transparent_17
+    21300036: 4-12-17 DeltaBreak spritesheet transparent_18
+    21300038: 4-12-17 DeltaBreak spritesheet transparent_19
+    21300040: 4-12-17 DeltaBreak spritesheet transparent_20
+    21300042: 4-12-17 DeltaBreak spritesheet transparent_21
+    21300044: 4-12-17 DeltaBreak spritesheet transparent_22
+    21300046: 4-12-17 DeltaBreak spritesheet transparent_23
+    21300048: 4-12-17 DeltaBreak spritesheet transparent_24
+    21300050: 4-12-17 DeltaBreak spritesheet transparent_25
+    21300052: 4-12-17 DeltaBreak spritesheet transparent_26
+    21300054: 4-12-17 DeltaBreak spritesheet transparent_27
+    21300056: 4-12-17 DeltaBreak spritesheet transparent_28
+    21300058: 4-12-17 DeltaBreak spritesheet transparent_29
+    21300060: 4-12-17 DeltaBreak spritesheet transparent_30
+    21300062: 4-12-17 DeltaBreak spritesheet transparent_31
+    21300064: 4-12-17 DeltaBreak spritesheet transparent_32
+    21300066: 4-12-17 DeltaBreak spritesheet transparent_33
+    21300068: 4-12-17 DeltaBreak spritesheet transparent_34
+    21300070: 4-12-17 DeltaBreak spritesheet transparent_35
+    21300072: 4-12-17 DeltaBreak spritesheet transparent_36
+    21300074: 4-12-17 DeltaBreak spritesheet transparent_37
+    21300076: 4-12-17 DeltaBreak spritesheet transparent_38
+    21300078: 4-12-17 DeltaBreak spritesheet transparent_39
+    21300080: 4-12-17 DeltaBreak spritesheet transparent_40
+    21300082: 4-12-17 DeltaBreak spritesheet transparent_41
+    21300084: 4-12-17 DeltaBreak spritesheet transparent_42
+    21300086: 4-12-17 DeltaBreak spritesheet transparent_43
+    21300088: 4-12-17 DeltaBreak spritesheet transparent_44
+    21300090: 4-12-17 DeltaBreak spritesheet transparent_45
+    21300092: 4-12-17 DeltaBreak spritesheet transparent_46
+    21300094: 4-12-17 DeltaBreak spritesheet transparent_47
+    21300096: 4-12-17 DeltaBreak spritesheet transparent_48
+    21300098: 4-12-17 DeltaBreak spritesheet transparent_49
+    21300100: 4-12-17 DeltaBreak spritesheet transparent_50
+    21300102: 4-12-17 DeltaBreak spritesheet transparent_51
+    21300104: 4-12-17 DeltaBreak spritesheet transparent_52
+    21300106: 4-12-17 DeltaBreak spritesheet transparent_53
+    21300108: 4-12-17 DeltaBreak spritesheet transparent_54
+    21300110: 4-12-17 DeltaBreak spritesheet transparent_55
+    21300112: 4-12-17 DeltaBreak spritesheet transparent_56
+    21300114: 4-12-17 DeltaBreak spritesheet transparent_57
+    21300116: 4-12-17 DeltaBreak spritesheet transparent_58
+    21300118: 4-12-17 DeltaBreak spritesheet transparent_59
+    21300120: 4-12-17 DeltaBreak spritesheet transparent_60
+    21300122: 4-12-17 DeltaBreak spritesheet transparent_61
+    21300124: 4-12-17 DeltaBreak spritesheet transparent_62
+    21300126: 4-12-17 DeltaBreak spritesheet transparent_63
+    21300128: 4-12-17 DeltaBreak spritesheet transparent_64
+    21300130: 4-12-17 DeltaBreak spritesheet transparent_65
+    21300132: 4-12-17 DeltaBreak spritesheet transparent_66
+    21300134: 4-12-17 DeltaBreak spritesheet transparent_67
+    21300136: 4-12-17 DeltaBreak spritesheet transparent_68
+    21300138: 4-12-17 DeltaBreak spritesheet transparent_69
+    21300140: 4-12-17 DeltaBreak spritesheet transparent_70
+    21300142: 4-12-17 DeltaBreak spritesheet transparent_71
+    21300144: 4-12-17 DeltaBreak spritesheet transparent_72
+    21300146: 4-12-17 DeltaBreak spritesheet transparent_73
+    21300148: 4-12-17 DeltaBreak spritesheet transparent_74
+    21300150: 4-12-17 DeltaBreak spritesheet transparent_75
+    21300152: 4-12-17 DeltaBreak spritesheet transparent_76
+    21300154: 4-12-17 DeltaBreak spritesheet transparent_77
+    21300156: 4-12-17 DeltaBreak spritesheet transparent_78
+    21300158: 4-12-17 DeltaBreak spritesheet transparent_79
+    21300160: 4-12-17 DeltaBreak spritesheet transparent_80
+    21300162: 4-12-17 DeltaBreak spritesheet transparent_81
+    21300164: 4-12-17 DeltaBreak spritesheet transparent_82
+    21300166: 4-12-17 DeltaBreak spritesheet transparent_83
+    21300168: 4-12-17 DeltaBreak spritesheet transparent_84
+    21300170: 4-12-17 DeltaBreak spritesheet transparent_85
+    21300172: 4-12-17 DeltaBreak spritesheet transparent_86
+    21300174: 4-12-17 DeltaBreak spritesheet transparent_87
+    21300176: 4-12-17 DeltaBreak spritesheet transparent_88
+    21300178: 4-12-17 DeltaBreak spritesheet transparent_89
+    21300180: 4-12-17 DeltaBreak spritesheet transparent_90
+    21300182: 4-12-17 DeltaBreak spritesheet transparent_91
+    21300184: 4-12-17 DeltaBreak spritesheet transparent_92
+    21300186: 4-12-17 DeltaBreak spritesheet transparent_93
+    21300188: 4-12-17 DeltaBreak spritesheet transparent_94
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 397
+        width: 168
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5191093214d9c4b8c6af166471880b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 411
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cad6a0724f33424d9a65cb2254befd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 364
+        width: 17
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24c9af1990f9334690fe4c6e4db4ce5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_3
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 436
+        width: 132
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40427363ccfbe5e4a92f4b42d9543319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_4
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 403
+        width: 172
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02267e99336fec4a98353e028570abc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 377
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a86e4279d0784448db079118163a8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 377
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d233d7acb43518b43b24ce9a61820215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0ba3f359efea2478d40d820113df82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 354
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8b637264745894f8814054469d7ce7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 358
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c6b8e9abc9ef5479a2dbfb0042ac08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 348
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcf596049865ad49ab091eef1fc4976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_11
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 348
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824eab391cce0d9489c7a784debd2027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 312
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae25c92a981844b42947a4e32c9900fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 312
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a450764ef1fa834bb9588b4956fb2ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 312
+        width: 59
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf694099219c1ac498a9f4d3533e7257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_15
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 327
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eaa2d4c1ce75f489464f07b1d7c0e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_16
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 305
+        width: 266
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535b7b74e8ed34748bbbcbee7bcfa88b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 299
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9db6d1d9fbf894b951d1e56fa32ade
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 274
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce754163ffbfe7e40a2b2dfb0d1ecc34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_19
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 274
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906363e979c37f44c8fc8aefc70a0600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_20
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 274
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c13fc6f413be5f4688f98824306c29c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 274
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b78dfdc68bc114095de665facab88b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 287
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ee8415041db314696ee09843d76198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 235
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36002209072a1674da7b99814f82d8c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 235
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321710dbc766df148acfd6345dadad3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_25
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 235
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c975bb8e76d016f4cb84c8cd19966fcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_26
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 235
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52fcc6a21de49541b09c731c8db3aae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_27
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 235
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabfad2633868e34cb9f042dd55603cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_28
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 235
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0369f8d39e9b65640843541effb82ef4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 227
+        width: 266
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e61f5c75043fe498be739e838b5db1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3f8f9e4c00ace489998d525ece2221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_31
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835b971d0d20c8b46a71321103687de9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_32
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6066ccaf9db8a4da217f2225b5e6a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e7cd941ea7a604bb33d4ca2418fceb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_34
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa08ec556d55b2046aa4b18ecd025fce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_35
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 194
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50e620fa1324954fbf63ac1c49e33ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 193
+        width: 80
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fbc6e886c172249811b3aed67334f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_37
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 124
+        width: 266
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9aa0ea796290342906018e4504d104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 175
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866f137da3ad15e4e91c0cbcb6785bf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_39
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 142
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52132afcc3623744e9a1a93b36626ddd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_40
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8e8593f7782e746a1e4b73653bf1e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_41
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9d60d744769df4ba5036fe86bfb08a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_42
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f254fa63e659fb548937360f7c4db362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_43
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c264f1b2e7d0f0e48bb45f461a061378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_44
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2aedf069151924d9054b2494f076bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_45
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 143
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb6d98c607a5eb4b8c6e9475ca6d8cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_46
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 126
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfd1c621466fd246b81c799b8fdde39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_47
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 125
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e2f3fb7acc58b499ac6cdd64613c5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_48
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 125
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d0845f6be6fd74aa9d56d61bf1714c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_49
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 113
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5322f2eedb7e611409da59ad2cd5be0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 113
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb946bc29a8cb448a445dc25228ee85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_51
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15ea9f9af698c94abf83d7c4391bd8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_52
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cfedfcb61c2a24fb92cf23797744f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_53
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 110
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a40d17719c9465478953787fff92d89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_54
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4dfc5894df8d242a9221c8af1c8a09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_55
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 110
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41242c9dcb93fdc4a87ec7ad8f6a0567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_56
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6616b44198286644d8e00e03143e61d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_57
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 110
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a573015fc8ee624bbfbabcbfafc60e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_58
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddeedabcc1a7de24bb526ef07fb10286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_59
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 110
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758bee4156e8b8146963288c2b97c52f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_60
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 110
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99207c9e35e738a44af7cb34da37c43a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_61
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75aafdb9c057c79429a3dcade1b60280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_62
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86deab0bd85bc41488609241a64018db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_63
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 116
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d468865026a25e43891a7b80cd5735f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_64
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac59a1bc842ca5468703f227d573621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_65
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 116
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31735c4f95f254e4d8cdd6ebaf2c62ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_66
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44864a09c00afa479133cf34b685765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_67
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 116
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db99647f94d226489622d0d3777f742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_68
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 116
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ef988510d4169408f2daa8d2d58ba4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_69
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 116
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ac634dd64455d49b3c6c6a2fe38a64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_70
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 116
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5df92281747274a8c18f64ba7bf61e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_71
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 109
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940618837417081459decfc1a2854921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_72
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 108
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c2da37592d7444aae6681f061143d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_73
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 101
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e388e471e011b3c4ea5084c8912d592e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 110
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7655db01f0e040c47833349be6f85bb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_75
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 110
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247ca502dac4a8a4292b81c3d480152b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_76
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 105
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824c3901d87d98b4c96df8846f18ba7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_77
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 97
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25525456af607a24bb90d426b3f6493a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 97
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9245f900ffe1b4480bae90af716f57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_79
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 97
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ea85f0d1722ef43919188e3c74b3a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_80
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 97
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642a933c7db851c43bde231d6c3f4920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_81
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 97
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d86c5e7d727aeb45bbf776df311b937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_82
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 54
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df16b312d17c4d743b1cfb051ca5d877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_83
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 84
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8380b2efbef0771409c5555735079928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_84
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 84
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5010c41de8bd094fa0d8f1f67665aa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_85
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 68
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8037e7c4e8f7bbc4ca7e20417f987534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_86
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 71
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebddd28df528f745864dd764ad111f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_87
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 50
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339ad0a784cf22c4c975a7f6e47497df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_88
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 58
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9581016e27d1c47bb94959721dcb4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_89
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 28
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628fc4c4659a1954fa5a80105b9c4d49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_90
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ec8bd4dfdff9642bd2e4edb0a47708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_91
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 41
+        width: 8
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c870ab8fd6580744db4c3e9c3f23a2b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_92
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853fbc51be33b0143a5ff768579d356e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_93
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 16
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7554e91a445ecef45a3367707d9c80e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-12-17 DeltaBreak spritesheet transparent_94
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 13
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1324c4d4cb6516479919ae2f01f95a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d2a25cbee8c783b419a13f270847b0ba
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

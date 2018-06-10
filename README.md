@@ -15,3 +15,5 @@ Some of the resources used are under the [Creative Commons license](https://crea
 - ball-bounce.wav by [mikaelfernstrom](https://freesound.org/people/mikaelfernstrom/sounds/68650/)
 - aiming.wav by [TwoLivesLeft](https://freesound.org/people/TwoLivesLeft/sounds/352683/)
 - scifi_platform_BG1.jpg & scifi_platformTiles_32x32.png by [Eris](https://opengameart.org/content/sci-fi-platform-tiles)
+- 4-12-17 DeltaBreak spritesheet transparent by [VisualElusion](https://opengameart.org/content/pixel-art-spritesheet-from-my-game-deltabreak)
+- starfield_alpha by [darklighter_designs](https://opengameart.org/content/starfield-alpha-4k)
