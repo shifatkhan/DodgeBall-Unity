@@ -13,6 +13,8 @@ public class OptionsMenu : MonoBehaviour {
 
 	public Dropdown resolutionDropdown;
 
+    public Toggle fullscreenToggle;
+
 	void Start()
 	{
 		resolutions = Screen.resolutions;
@@ -23,19 +25,31 @@ public class OptionsMenu : MonoBehaviour {
 		List<string> options = new List<string> ();
 
 		// Populate resolutions dropdown.
-		int currentResolutionIndex = 0;
+        int windowResolutionIndex = 0;
 		for (int i = 0; i < resolutions.Length; i++) {
 			string option = resolutions [i].width + " x " + resolutions [i].height;
 			options.Add (option);
 
-			if (resolutions [i].width == Screen.currentResolution.width &&
-				resolutions[i].height == Screen.currentResolution.height) {
-				currentResolutionIndex = i;
-			}
+            if (resolutions[i].width == Screen.width &&
+                resolutions[i].height == Screen.height)
+            {
+                windowResolutionIndex = i;
+            }
 		}
 
+        if (Screen.fullScreen)
+        {
+            fullscreenToggle.isOn = true;
+        }
+        else
+        {
+            fullscreenToggle.isOn = false;
+        }
+
+        SetResolution(windowResolutionIndex);
+
 		resolutionDropdown.AddOptions (options);
-		resolutionDropdown.value = currentResolutionIndex;
+		resolutionDropdown.value = windowResolutionIndex;
 		resolutionDropdown.RefreshShownValue();
 	}
 
@@ -69,5 +83,13 @@ public class OptionsMenu : MonoBehaviour {
 	public void SetFullscreen(bool isFullscreen) 
 	{
 		Screen.fullScreen = isFullscreen;
-	}
+        if (Screen.fullScreen)
+        {
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        }
+        else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+        }
+    }
 }

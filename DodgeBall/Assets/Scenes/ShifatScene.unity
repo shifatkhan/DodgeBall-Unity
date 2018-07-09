@@ -598,9 +598,20 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 530959856}
+    - target: {fileID: 114160331116410238, guid: 9eb411a7fda34d6438f0b49999b26181,
+        type: 2}
+      propertyPath: fullscreenToggle
+      value: 
+      objectReference: {fileID: 913588144}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eb411a7fda34d6438f0b49999b26181, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &913588144 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114529822246241262, guid: 9eb411a7fda34d6438f0b49999b26181,
+    type: 2}
+  m_PrefabInternal: {fileID: 913588143}
+  m_Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1247474190
 Prefab:
   m_ObjectHideFlags: 0

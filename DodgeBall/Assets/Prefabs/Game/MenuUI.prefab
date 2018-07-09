@@ -2372,7 +2372,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 16
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 0
@@ -3789,6 +3789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMixer: {fileID: 24100000, guid: 1bbd352f0c4f5b141b3e40ea2412460b, type: 2}
   resolutionDropdown: {fileID: 114577119568408900}
+  fullscreenToggle: {fileID: 114765239583928952}
 --- !u!114 &114882220646762708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4606,7 +4607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52.200012, y: -52.049988}
+  m_AnchoredPosition: {x: 52.19995, y: -52.05005}
   m_SizeDelta: {x: 104.399994, y: 104.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224050709768172648
