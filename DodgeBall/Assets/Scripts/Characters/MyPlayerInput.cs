@@ -89,6 +89,12 @@ public class MyPlayerInput : MonoBehaviour {
             // Aim the ball.
             if (Input.GetButton("ThrowCatch_P1") && player.ballCaught && !player.ballCatching && player.canThrow)
             {
+                if (!aimingSound.isPlaying)
+                {
+                    aimingSound.enabled = true;
+                    aimingSound.loop = true;
+                }
+
                 aimController.MakeSpriteVisible(true);
                 aimController.aiming = true;
 
@@ -103,6 +109,12 @@ public class MyPlayerInput : MonoBehaviour {
 
                 if (aimController.aiming)
                 {
+                    if (aimingSound.isPlaying)
+                    {
+                        aimingSound.enabled = false;
+                        aimingSound.loop = false;
+                    }
+
                     player.throwBall();
                     
                     aimController.aiming = false;
@@ -123,6 +135,12 @@ public class MyPlayerInput : MonoBehaviour {
             // Aim the ball.
             if (Input.GetButton("ThrowCatch_P2") && player.ballCaught && !player.ballCatching && player.canThrow)
             {
+                if (!aimingSound.isPlaying)
+                {
+                    aimingSound.enabled = true;
+                    aimingSound.loop = true;
+                }
+
                 aimController.MakeSpriteVisible(true);
                 aimController.aiming = true;
 
@@ -137,6 +155,12 @@ public class MyPlayerInput : MonoBehaviour {
 
                 if (aimController.aiming)
                 {
+                    if (aimingSound.isPlaying)
+                    {
+                        aimingSound.enabled = false;
+                        aimingSound.loop = false;
+                    }
+
                     player.throwBall();
 
                     aimController.aiming = false;
