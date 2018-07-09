@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112887453788618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.73, y: -3.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.97, y: -3.56, z: 0}
+  m_LocalScale: {x: 0.63294774, y: 0.63294774, z: 0.63294774}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwDirection: {x: -0.8526412, y: 0.52249736}
   bounceSound: {fileID: 0}
-  throwerId: -1
+  throwerId: 2
   speedBeforeReset: 4
   playerIsCatchingTheBall: 0
 --- !u!212 &212460168917698618
@@ -206,7 +206,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f3bb55ff304a1254a8ac9de0c7976029, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
