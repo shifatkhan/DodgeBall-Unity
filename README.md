@@ -5,6 +5,7 @@ A 2D game mixing pong and dodge-ball together
 This is a game made using mainly [Unity](https://unity3d.com/) by Shifat Khan (@shiftkun) and William Ngo (@WillyNgo).
 
 The background music was composed and created by Shifat Khan (@shiftkun).
+The arts and animations were created by William Ngo (@WillyNgo)
 
 Some of the resources used are under the [Creative Commons license](https://creativecommons.org/licenses/by/3.0/):
 - catch.wav by [14GPanskaValaChristoffer](https://freesound.org/people/14GPanskaValaChristoffer/sounds/420165/)
