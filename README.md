@@ -1,5 +1,6 @@
 # DodgeBall
 A 2D game mixing pong and dodge-ball together
+Play at: https://shifatkhan.itch.io/dodgeball2d
 
 ### Credits
 This is a game made using mainly [Unity](https://unity3d.com/) by Shifat Khan (@shiftkun) and William Ngo (@WillyNgo).
